@@ -1,0 +1,14 @@
+base:
+  version: 1.x
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui
+
+global-styling:
+  css:
+    theme:
+      css/style.css: {}

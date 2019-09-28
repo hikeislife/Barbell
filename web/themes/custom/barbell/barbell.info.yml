@@ -1,0 +1,20 @@
+name: Barbell
+type: theme
+description: 'Barbell gym custom theme'
+package: Other
+core: 8.x
+libraries:
+  - barbell/base
+  - barbell/global-styling
+ 
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  header: Header
+  hero: Hero
+  content: Content
+  pre_footer_left: Pre footer Left
+  pre_footer_right: Pre footer right
+  footer: Footer
+  after_content: After content

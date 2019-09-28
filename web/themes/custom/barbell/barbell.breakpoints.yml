@@ -1,0 +1,12 @@
+barbell.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  weight: '1'
+  multipliers:
+    - '1x'
+barbell.wide:
+  label: wide
+  mediaQuery: 'min-width: 851px'
+  weight: '1'
+  multipliers:
+    - '1x'
