@@ -20,6 +20,13 @@
     src: local('Brandon Grotesque Bold'), url('brandon-grotesque-bold-587bd6400afd0.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Henry';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Henry'), url('Henrik-Regular.otf') format('woff');
+}
+
 /* NAVIGATION */
 header div, #block-barbell-branding, #block-barbell-branding a img, #block-barbell-branding div, 
 header div nav, header div nav h2, header div nav div, 
@@ -86,4 +93,27 @@ header div div .links {
     display: inline-grid;
     
 }
+
+/*  */
+.page-title:before {
+    content:url('../img/page-title-bcg.png');
+    position: relative;
+    left: 100px;
+    z-index: -1;
+    bottom: -12px;
+}
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 120px;
+    font-size: 60px;
+    position: relative;
+    font-family: 'Henry';
+    left: -30px;
+}
+
+/* .page-title span {
+    z-index: 50;
+} */
 
