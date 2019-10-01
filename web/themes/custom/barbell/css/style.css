@@ -94,7 +94,7 @@ header div div .links {
     
 }
 
-/*  */
+/* PAGE TITLE */
 .page-title:before {
     content:url('../img/page-title-bcg.png');
     position: relative;
@@ -113,7 +113,82 @@ header div div .links {
     left: -30px;
 }
 
-/* .page-title span {
-    z-index: 50;
-} */
+/* MAIN CONTENT */
+.field--name-body {
+    margin: 0 150px;
+    font-family: 'Brandon Grotesque Medium';
+    font-size: 22px;
+    text-align: justify;
+}
 
+.field--name-body p strong {
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 22px;
+}
+
+.field--name-body p img {
+    margin-left: 70px;
+}
+
+/* BUTTON */
+.node__content {
+    display: grid;
+}
+
+.field--name-field-link-button {
+    background: var(--yellow);
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 70px;
+    align-content: center;
+    border-radius: 35px;
+}
+
+.field--name-field-link-button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Brandon Grotesque Medium';
+}
+
+/* FOOTER */
+.region-footer { /* black bar wrapper */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% auto 20%;
+    margin-top: 50px;
+    height: 80px;
+    background: black;
+    align-content: center;
+}
+
+#block-yearname {
+    color: var(--yellow);
+    /* display: inline-block;
+    width: 100%;     */
+}
+#block-yearname  div {
+    width: 100%;
+    margin: 0;
+    margin-left: 130px;
+}
+footer div nav {
+    display: inline;
+    color: white;
+    align-self: center;
+}
+
+footer div nav ul li a {
+    color: gray;
+    text-decoration: none;
+    font-family: 'Brandon Grotesque Medium';
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#block-mainnavigation, #block-mainnavigation h2, #block-mainnavigation ul, #block-mainnavigation ul li {
+    display: inline;
+}
