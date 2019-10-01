@@ -109,7 +109,7 @@ header div div .links {
     margin: 120px;
     font-size: 60px;
     position: relative;
-    font-family: 'Henry';
+    font-family: 'Henry', sans-serif;
     left: -30px;
 }
 
