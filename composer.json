@@ -26,6 +26,7 @@
         "drupal/backup_migrate": "4.x-dev",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
+        "drupal/devel": "2.x-dev",
         "drupal/entity_clone": "1.x-dev",
         "drupal/slick": "^2.0",
         "drupal/slick_views": "^2.0",
