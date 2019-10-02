@@ -53,6 +53,9 @@ header div {
     text-align: right;
     padding-right: 20px;
     vertical-align: middle;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 #block-barbell-branding a img { 
@@ -191,4 +194,11 @@ footer div nav ul li a {
 
 #block-mainnavigation, #block-mainnavigation h2, #block-mainnavigation ul, #block-mainnavigation ul li {
     display: inline;
+}
+
+blockquote p {
+    text-transform: uppercase;
+    font-family: 'Henry';
+    text-align: center;
+    font-size: 60px;
 }
