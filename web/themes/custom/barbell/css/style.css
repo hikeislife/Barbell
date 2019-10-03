@@ -249,7 +249,10 @@ footer div nav ul li a {
   display: inline;
 }
 
-/***BLOCKQUOTE***/
+/* ******************************************** */
+/* ******************************************** */
+
+/* BLOCKQUOTE */
 blockquote p {
   text-transform: uppercase;
   font-family: "Henry";
