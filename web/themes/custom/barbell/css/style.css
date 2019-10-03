@@ -132,26 +132,30 @@ header div div .links {
 }
 
 /* PAGE TITLE */
-.page-title .field--name-title:before {
-  content: url("../img/page-title-bcg-med1.png");
-  position: absolute;
-  left: 253px;
-  z-index: -1;
-  bottom: -17px;
-}
-
 .page-title {
   text-align: center;
   text-transform: uppercase;
   margin: 120px;
   font-size: 76px;
-  position: relative;
   font-family: "Henry", sans-serif;
   letter-spacing: 2px;
 }
 
+.field--name-title {
+  position: relative;
+}
+
+/* YELLOW STRIPES */
+.page-title .field--name-title:before {
+  content: url("../img/page-title-bcg-med1.png");
+  position: absolute;
+  left: -25px;
+  z-index: -1;
+  bottom: -29px;
+}
+
 /* MAIN TXT (all, except home page) */
-.field--name-body {
+.field--name-body p {
   margin: 0 13%;
   font-family: "Brandon Grotesque Medium";
   font-size: 28px;
@@ -249,4 +253,11 @@ blockquote p {
   font-family: "Henry";
   text-align: center;
   font-size: 60px;
+}
+
+/* +++++++++++ KONTAKT +++++++++++ */
+
+.front-kontakt-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
