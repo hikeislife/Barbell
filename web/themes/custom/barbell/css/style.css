@@ -132,7 +132,8 @@ header div div .links {
 }
 
 /* PAGE TITLE */
-.page-title {
+.page-title,
+.kontakt-block-content h3 {
   text-align: center;
   text-transform: uppercase;
   margin: 120px;
@@ -141,17 +142,28 @@ header div div .links {
   letter-spacing: 2px;
 }
 
-.field--name-title {
+.field--name-title,
+.kontakt-block-content h3 {
   position: relative;
 }
 
 /* YELLOW STRIPES */
-.page-title .field--name-title:before {
+.page-title .field--name-title:before,
+.kontakt-block-content h3:before {
   content: url("../img/page-title-bcg-med1.png");
   position: absolute;
   left: -25px;
   z-index: -1;
   bottom: -29px;
+}
+
+.kontakt-block-content h3 {
+  display: inline-block;
+}
+
+.kontakt-block-content h3:before {
+  left: -39px;
+  bottom: -21px;
 }
 
 /* MAIN TXT (all, except home page) */
@@ -236,21 +248,13 @@ footer div nav ul li a {
   align-items: center;
 }
 
-/**/
-blockquote p {
-  text-transform: uppercase;
-  font-family: "Henry";
-  text-align: center;
-  font-size: 60px;
-}
-
 /* ******************************************** */
 /* ******************************************** */
 
 /* BLOCKQUOTE */
 blockquote p {
   text-transform: uppercase;
-  font-family: "Henry";
+  font-family: "Henry", sans-serif;
   text-align: center;
   font-size: 60px;
 }
@@ -260,4 +264,52 @@ blockquote p {
 .front-kontakt-holder {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.kontakt-block-content {
+  font-family: "Brandon Grotesque Bold", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  background: gray;
+}
+
+.kontakt-block-content h3 {
+  font-family: "Henry", sans-serif;
+  margin: 220px 0 80px;
+  z-index: 1;
+}
+
+.kontakt-block-content .tel {
+  margin-bottom: 35px;
+}
+
+.kontakt-block-content .tel a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 43px;
+}
+
+.kontakt-block-content .address {
+  font-size: 33px;
+  margin-bottom: 50px;
+}
+
+.kontakt-block-content .email {
+  margin-bottom: 80px;
+}
+
+.kontakt-block-content .email a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-size: 32px;
+  margin-bottom: 80px;
+}
+
+.kontakt-block-content .socials {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.kontakt-block-content .socials span {
+  margin: 0 5px;
 }
