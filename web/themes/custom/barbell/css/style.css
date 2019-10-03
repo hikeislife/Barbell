@@ -37,7 +37,7 @@ header div nav ul, header div nav ul li,
 
 header div {
     display: grid;
-    grid-template-columns: 30% auto 10%;
+    grid-template-columns: 300px auto 10%;
     height: 60px;
     background: var(--yellow);
     width: 100%;
@@ -53,9 +53,9 @@ header div {
     text-align: right;
     padding-right: 20px;
     vertical-align: middle;
-    background-image: url('../img/logo.png');
+    /* background-image: url('../img/logo.png');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
 }
 
 #block-barbell-branding a img { 
@@ -134,11 +134,11 @@ header div div .links {
 }
 
 /* BUTTON */
-.node__content {
+.node__content, #block-zakazitetrening div {
     display: grid;
 }
 
-.field--name-field-link-button {
+.field--name-field-link-button, #block-zakazitetrening div p {
     background: var(--yellow);
     color: white;
     display: inline-block;
@@ -151,7 +151,7 @@ header div div .links {
     border-radius: 35px;
 }
 
-.field--name-field-link-button a {
+.field--name-field-link-button a, #block-zakazitetrening div p a {
     color: white;
     text-decoration: none;
     font-family: 'Brandon Grotesque Medium';
@@ -196,9 +196,49 @@ footer div nav ul li a {
     display: inline;
 }
 
+
+/**/
 blockquote p {
     text-transform: uppercase;
     font-family: 'Henry';
     text-align: center;
     font-size: 60px;
+}
+
+/* POČETNA */
+.slider-link div div a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slide .front-slider .slider-image .slider-content .slider-link {
+    text-align: center;
+}
+.slide .front-slider .slider-image .slider-content .slider-link div {
+    background: transparent!important;
+    border: 2px solid var(--yellow);
+    text-align: center;
+}
+
+.slide .front-slider .slider-image .slider-content .slider-link div .field__item {
+    border: none;
+}
+
+h2 span:before {
+    content:url('../img/page-title-bcg.png');
+    position: relative;
+    left: 100px;
+    z-index: -1;
+    bottom: -12px;
+}
+
+h2 span {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 120px;
+    font-size: 60px;
+    position: relative;
+    font-family: 'Henry', sans-serif;
+    left: -30px;
 }
