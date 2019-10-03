@@ -1,0 +1,19 @@
+#block-sociallinks div {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 39px;
+    color: whitesmoke !important;
+  }
+  
+  #block-sociallinks div a {
+    color: whitesmoke !important;
+  }
+  
+  #block-mainnavigation,
+  #block-mainnavigation h2,
+  #block-mainnavigation ul,
+  #block-mainnavigation ul li {
+    display: inline;
+  }

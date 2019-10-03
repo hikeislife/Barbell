@@ -1,10 +1,15 @@
-/* NAVIGATION */
 :root {
   --yellow: #f6b018;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body,
+header div {
+  width: 100vw;
 }
 
 @font-face {
@@ -54,7 +59,7 @@ header div {
   grid-template-columns: 300px auto 10%;
   height: 60px;
   background: var(--yellow);
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 
@@ -133,7 +138,8 @@ header div div .links {
 
 /* PAGE TITLE */
 .page-title,
-.kontakt-block-content h3 {
+.kontakt-block-content h3,
+#after_content div div h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 120px;
@@ -149,11 +155,14 @@ header div div .links {
 
 /* YELLOW STRIPES */
 .page-title .field--name-title:before,
-.kontakt-block-content h3:before {
+head .kontakt-block-content h3:before,
+#after_content div div h2:before {
   content: url("../img/page-title-bcg-med1.png");
   position: absolute;
-  left: -25px;
   z-index: -1;
+}
+.page-title .field--name-title:before {
+  left: -25px;
   bottom: -29px;
 }
 
@@ -195,9 +204,13 @@ header div div .links {
   padding: 25px 50px;
   font-size: 27px;
   margin: auto;
-  margin-top: 70px;
+
   align-content: center;
   border-radius: 45px;
+}
+
+#block-zakazitetrening div p {
+  margin-top: 70px;
 }
 
 .field--name-field-link-button a,
