@@ -1,10 +1,13 @@
-/* NAVIGATION */
 :root {
   --yellow: #f6b018;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html, body, header div {
+    width: 100vw;
 }
 
 @font-face {
@@ -54,7 +57,7 @@ header div {
   grid-template-columns: 300px auto 10%;
   height: 60px;
   background: var(--yellow);
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 
@@ -152,9 +155,11 @@ header div div .links {
 #after_content div div h2:before {
   content: url("../img/page-title-bcg-med1.png");
   position: absolute;
-  left: -25px;
   z-index: -1;
-  bottom: -29px;
+}
+.page-title .field--name-title:before {
+    left: -25px;
+    bottom: -29px;
 }
 
 /* MAIN TXT (all, except home page) */

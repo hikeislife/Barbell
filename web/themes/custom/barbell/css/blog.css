@@ -1,0 +1,30 @@
+#block-barbell-page-title {
+    height: 200px;
+    width: 100vw;
+}
+
+#block-barbell-page-title h1.page-title {
+    margin-right: 230px;
+}
+
+#block-barbell-page-title h1.page-title:before {
+    display: inline-block;
+    content: url("../img/page-title-bcg-med1.png");
+    position: relative;
+    z-index: -1;
+    bottom: -15px;
+    left: 130px;
+}
+
+#block-barbell-content {
+    margin: 100px;
+    width: 100vw;
+}
+
+#block-barbell-content div div .view-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: space-between;
+    
+}

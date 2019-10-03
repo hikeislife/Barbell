@@ -37,7 +37,7 @@ h2 {
 h2 span {
     z-index: 1;
     text-transform: uppercase;
-    color: white;
+    color: whitesmoke;
     margin: 120px;
     font-size: 60px;
     position: relative;
@@ -45,9 +45,9 @@ h2 span {
     left: -30px;
 }
 
-/* this is white narrow text between title and button */
+/* this is whitesmoke narrow text between title and button */
 .slider-desc div p {
-    color: white;
+    color: whitesmoke;
     margin: 0 100px;
 }
 
@@ -70,12 +70,23 @@ h2 span {
 }
 
 /* PROGRAMI */
+#after_content div div {
+    text-align: center;
+}
+#after_content div div h2 {
+    display: inline-block;
+}
+#after_content div div h2:before {
+    bottom: -15px;
+    left: 123px;
+    position: relative;
+}
 
 .view-programi .view-content {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-gap: 20px;
-    justify-items: space-between;
+    justify-content: space-between;
     margin: -70px 150px 40px;
 }
 
@@ -90,7 +101,7 @@ h2 span {
 }
 
 .view-content .views-row:hover .program-link {
-    color: white;
+    color: whitesmoke;
 }
 
 .program-thumb {
