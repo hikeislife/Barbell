@@ -13,3 +13,4 @@ global-styling:
     theme:
       css/style.css: {}
       css/funkcTreninzi.css: {}
+      css/frontPage.css: {}
