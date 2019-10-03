@@ -132,7 +132,8 @@ header div div .links {
 }
 
 /* PAGE TITLE */
-.page-title .field--name-title:before {
+.page-title .field--name-title:before,
+#after_content div div h2:before {
   content: url("../img/page-title-bcg-med1.png");
   position: absolute;
   left: 253px;
@@ -140,7 +141,8 @@ header div div .links {
   bottom: -17px;
 }
 
-.page-title {
+.page-title,
+#after_content div div h2 {
   text-align: center;
   text-transform: uppercase;
   margin: 120px;
@@ -179,9 +181,13 @@ header div div .links {
   padding: 25px 50px;
   font-size: 27px;
   margin: auto;
-  margin-top: 70px;
+  
   align-content: center;
   border-radius: 45px;
+}
+
+#block-zakazitetrening div p {
+    margin-top: 70px;
 }
 
 .field--name-field-link-button a,
