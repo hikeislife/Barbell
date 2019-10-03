@@ -1,3 +1,4 @@
+/* NAVIGATION */
 :root {
   --yellow: #f6b018;
 }
@@ -150,7 +151,7 @@ header div div .links {
   letter-spacing: 2px;
 }
 
-/* MAIN CONTENT */
+/* MAIN TXT (all, except home page) */
 .field--name-body {
   margin: 0 13%;
   font-family: "Brandon Grotesque Medium";
@@ -158,11 +159,13 @@ header div div .links {
   text-align: justify;
 }
 
+/* bold prices txt */
 .field--name-body p strong {
   font-family: "Brandon Grotesque Bold";
   font-size: 30px;
 }
 
+<<<<<<< HEAD
 .field--name-body p img {
   margin-left: 70px;
 }
@@ -190,6 +193,33 @@ header div div .links {
     color: white;
     text-decoration: none;
     font-family: 'Brandon Grotesque Medium';
+=======
+/* BUTTON (all, except home page)*/
+.node__content,
+#block-zakazitetrening div {
+  display: grid;
+}
+
+.field--name-field-link-button,
+#block-zakazitetrening div p {
+  background: var(--yellow);
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 25px 50px;
+  font-size: 27px;
+  margin: auto;
+  margin-top: 70px;
+  align-content: center;
+  border-radius: 45px;
+}
+
+.field--name-field-link-button a,
+#block-zakazitetrening div p a {
+  color: white;
+  text-decoration: none;
+  font-family: "Brandon Grotesque Medium";
+>>>>>>> d04d59076f1943bfa8ab5d85378cd143a9b43188
 }
 
 /* FOOTER */
@@ -206,14 +236,14 @@ header div div .links {
 
 #block-yearname {
   color: var(--yellow);
-  /* display: inline-block;
-    width: 100%;     */
 }
+
 #block-yearname div {
   width: 100%;
   margin: 0;
   margin-left: 130px;
 }
+
 footer div nav {
   display: inline;
   color: white;
