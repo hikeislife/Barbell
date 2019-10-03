@@ -165,35 +165,7 @@ header div div .links {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
-.field--name-body p img {
-  margin-left: 70px;
-}
 
-/* BUTTON */
-
-.node__content, #block-zakazitetrening div {
-    display: grid;
-}
-
-.field--name-field-link-button, #block-zakazitetrening div p {
-    background: var(--yellow);
-    color: white;
-    display: inline-block;
-    text-transform: uppercase;
-    padding: 20px 40px;
-    font-size: 20px;
-    margin: auto;
-    margin-top: 70px;
-    align-content: center;
-    border-radius: 35px;
-}
-
-.field--name-field-link-button a, #block-zakazitetrening div p a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Brandon Grotesque Medium';
-=======
 /* BUTTON (all, except home page)*/
 .node__content,
 #block-zakazitetrening div {
@@ -219,7 +191,6 @@ header div div .links {
   color: white;
   text-decoration: none;
   font-family: "Brandon Grotesque Medium";
->>>>>>> d04d59076f1943bfa8ab5d85378cd143a9b43188
 }
 
 /* FOOTER */
@@ -271,61 +242,4 @@ blockquote p {
     font-size: 60px;
 }
 
-/* POČETNA */
-.slider-link div div a {
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.slide .front-slider .slider-image .slider-content .slider-link {
-    text-align: center;
-}
-.slide .front-slider .slider-image .slider-content .slider-link div {
-    background: transparent!important;
-    border: 2px solid var(--yellow);
-    text-align: center;
-}
-
-.slide .front-slider .slider-image .slider-content .slider-link div .field__item {
-    border: none;
-}
-
-h2 span:before {
-    content:url('../img/page-title-bcg.png');
-    position: relative;
-    left: 100px;
-    z-index: -1;
-    bottom: -12px;
-}
-
-h2 span {
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    margin: 120px;
-    font-size: 60px;
-    position: relative;
-    font-family: 'Henry', sans-serif;
-    left: -30px;
-}
-
-#block-sociallinks div {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 39px;
-  color: whitesmoke !important;
-}
-
-#block-sociallinks div a {
-  color: whitesmoke !important;
-}
-
-#block-mainnavigation,
-#block-mainnavigation h2,
-#block-mainnavigation ul,
-#block-mainnavigation ul li {
-  display: inline;
-}
 
