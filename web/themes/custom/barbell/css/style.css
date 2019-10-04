@@ -260,11 +260,15 @@ footer div nav {
 }
 
 footer div nav ul li a {
-  color: gray;
+  color: dimgray;
   text-decoration: none;
   font-family: "Brandon Grotesque Medium";
   text-transform: uppercase;
   font-size: 13px;
+}
+
+footer div nav ul.menu a.is-active {
+  color: dimgray;
 }
 
 #block-sociallinks {
