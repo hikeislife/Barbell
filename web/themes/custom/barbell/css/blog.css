@@ -1,4 +1,5 @@
-#block-barbell-page-title {
+.path-blog #block-barbell-page-title,
+.path-vesti #block-barbell-page-title {
     height: 200px;
     width: 100vw;
 }
@@ -18,7 +19,6 @@
 
 #block-barbell-content {
     margin: 100px;
-    width: 100vw;
 }
 
 #block-barbell-content div div .view-content {
@@ -27,4 +27,32 @@
     grid-gap: 20px;
     justify-content: space-between;
     
+}
+
+.article-thumb  {
+    text-align: center;
+    color: black;
+}
+
+.article-thumb a {
+    text-decoration: none;
+    color: black;
+    font-family: "Brandon Grotesque Medium";
+}
+
+.article-image {
+    background: dimgray;
+}
+
+.article-image div img {
+    width: 100%;
+}
+
+.article-info-wrapper {
+    padding: 10px;
+}
+
+.article-info-wrapper .article-date div time {
+    color: var(--gray);
+    font-size: 12px;
 }
