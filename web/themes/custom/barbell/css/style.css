@@ -14,6 +14,11 @@ body,
   overflow-x: hidden;
 }
 
+/* FOOTER EXTRA SPACE SOLUTION */
+#block-mainnavigation-menu {
+  display: none !important;
+}
+
 @font-face {
   font-family: "Brandon Grotesque Medium";
   font-style: normal;
@@ -233,7 +238,6 @@ header div div .links {
   display: grid;
   width: 100%;
   grid-template-columns: 30% auto 20%;
-  margin-top: 50px;
   height: 120px;
   background: black;
   align-content: center;
