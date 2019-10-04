@@ -26,11 +26,19 @@
 }
 
 h2 span:before {
+<<<<<<< HEAD
   content: url("../img/page-title-bcg.png");
   position: absolute;
   left: 100px;
   z-index: -1;
   bottom: -12px;
+=======
+    content:url('../img/page-title-bcg.png');
+    position: absolute;
+    left: -25px;
+    z-index: -1;
+    bottom: -17px;
+>>>>>>> e5aed91d1d881be4da5cbb661dbfd278a40f86d7
 }
 
 h2 {
@@ -51,8 +59,14 @@ h2 span {
 
 /* this is whitesmoke narrow text between title and button */
 .slider-desc div p {
+<<<<<<< HEAD
   color: whitesmoke;
   margin: 0 100px;
+=======
+    color: whitesmoke;
+    width: 800px;
+    margin: 0 auto;
+>>>>>>> e5aed91d1d881be4da5cbb661dbfd278a40f86d7
 }
 
 /* SLIDER BUTTON */

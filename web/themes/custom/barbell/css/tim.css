@@ -1,3 +1,13 @@
 .path-tim div div main div div #block-barbell-content div .view-tim .view-content {
     grid-template-columns: 200px 200px;
+    grid-gap: 20px;
+    justify-content: none;
+}
+
+.view-tim .view-content div div a {
+
+}
+
+.view-tim .view-content div div a .tim-image div img {
+    width: 100%;
 }
