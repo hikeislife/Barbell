@@ -59,7 +59,7 @@ li.sr {
 header div {
   display: grid;
   grid-template-columns: 33% auto 7%;
-  height: 73px;
+  height: 75px;
   background: var(--yellow);
   width: 100vw;
   align-items: center;
@@ -67,7 +67,7 @@ header div {
 
 /* NAV LOGO */
 #block-barbell-branding {
-  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
   width: 100%;
   background: black;
   height: 100%;
@@ -106,13 +106,8 @@ header div div .links {
 .language-switcher-language-url {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-  width: 10px;
-  right: -20px;
-=======
   width: 0;
-    right: -20px;
->>>>>>> 02a883fbe4d7ad2f429a3db4c9daaf5fcb539cce
+  right: -20px;
 }
 #block-languageswitcher ul {
   right: 60px;
