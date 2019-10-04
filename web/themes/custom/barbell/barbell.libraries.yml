@@ -16,3 +16,4 @@ global-styling:
       css/frontPage.css: {}
       css/social.css: {}
       css/blog.css: {}
+      css/tim.css: {}
