@@ -106,8 +106,13 @@ header div div .links {
 .language-switcher-language-url {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   width: 10px;
   right: -20px;
+=======
+  width: 0;
+    right: -20px;
+>>>>>>> 02a883fbe4d7ad2f429a3db4c9daaf5fcb539cce
 }
 #block-languageswitcher ul {
   right: 60px;

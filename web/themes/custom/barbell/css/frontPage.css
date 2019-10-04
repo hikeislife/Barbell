@@ -10,6 +10,11 @@
     text-decoration: none;
 } */
 
+/* DEVELOPMENTAL */
+.slide--1 {
+  display: none;
+}
+
 .slide
   .front-slider
   .slider-image
@@ -23,19 +28,20 @@
 #slick-views-front-slider-block-1-1-slider {
   padding-top: 1px;
   margin-top: -1px;
+  height: calc(100vh - 73px);
 }
 
 h2 span:before {
   content: url("../img/page-title-bcg-med1.png");
   position: absolute;
-  left: -25px;
+  left: -39px;
   z-index: -1;
-  bottom: -17px;
+  bottom: -28px;
 }
 
 h2 {
   text-align: center;
-  margin: 180px auto 20px;
+  margin: 32vh auto 20px;
 }
 
 h2 span {
@@ -44,6 +50,7 @@ h2 span {
   color: whitesmoke;
   margin: 120px;
   font-size: 76px;
+  left: 20px;
   position: relative;
   font-family: "Henry", sans-serif;
 }
@@ -51,8 +58,8 @@ h2 span {
 /* this is whitesmoke narrow text between title and button */
 .slider-desc div p {
   color: whitesmoke;
-  width: 800px;
-  margin: 30px auto;
+  width: 700px;
+  margin: 25px auto;
 }
 
 /* SLIDER BUTTON */
@@ -64,7 +71,7 @@ h2 span {
   background: transparent !important;
   border: 2px solid var(--yellow);
   text-align: center;
-  padding: 10px 60px;
+  padding: 10px 53px;
 }
 
 /* MAIN CONTENT */
