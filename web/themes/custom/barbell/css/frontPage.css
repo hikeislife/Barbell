@@ -26,12 +26,10 @@
 }
 
 #slick-views-front-slider-block-1-1-slider {
-    padding-top: 1px;
-    margin-top: -1px;
-    height: calc(100vh - 75px);
-   }
-   
-
+  padding-top: 1px;
+  margin-top: -1px;
+  height: calc(100vh - 75px);
+}
 
 h2 span:before {
   content: url("../img/page-title-bcg-med1.png");
@@ -77,8 +75,12 @@ h2 span {
 }
 
 /* MAIN CONTENT */
-.node__content div {
+.path-frontpage .node__content div {
   margin-top: 80px;
+  text-align: center;
+}
+
+.path-frontpage .field--name-body p {
   text-align: center;
 }
 

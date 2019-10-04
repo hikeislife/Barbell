@@ -86,7 +86,9 @@ header div {
 
 #block-barbell-branding a img {
   display: inline-block;
-  margin-right: 80px;
+  margin-right: 62px;
+  width: 290px;
+  padding: 19px 0;
 }
 
 /* NAV MAIN */
@@ -101,6 +103,7 @@ header div {
   text-decoration: none;
   color: black;
   font-family: "Brandon Grotesque Medium";
+  font-size: 17px;
 }
 
 /* Language switcher */
@@ -205,6 +208,7 @@ header div div .links {
 .node__content,
 #block-zakazitetrening div {
   display: grid;
+  position: relative;
 }
 
 .field--name-field-link-button,
@@ -216,8 +220,6 @@ header div div .links {
   padding: 25px 50px;
   font-size: 27px;
   margin: auto;
-
-  align-content: center;
   border-radius: 45px;
 }
 
@@ -278,9 +280,10 @@ footer div nav ul li a {
 /* BLOCKQUOTE */
 blockquote p {
   text-transform: uppercase;
-  font-family: "Henry", sans-serif;
-  text-align: center;
-  font-size: 60px;
+  font-family: "Henry", sans-serif !important;
+  text-align: center !important;
+  font-size: 74px !important;
+  margin: 80px 0 90px !important;
 }
 
 /* +++++++++++ KONTAKT +++++++++++ */

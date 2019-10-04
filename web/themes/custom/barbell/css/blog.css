@@ -1,58 +1,59 @@
 .path-blog #block-barbell-page-title,
 .path-vesti #block-barbell-page-title {
-    height: 200px;
-    width: 100vw;
+  height: 200px;
+  width: 100vw;
 }
 
-#block-barbell-page-title h1.page-title {
-    margin-right: 230px;
+.path-blog #block-barbell-page-title h1.page-title {
+  margin-right: 230px;
 }
 
-#block-barbell-page-title h1.page-title:before {
-    display: inline-block;
-    content: url("../img/page-title-bcg-med1.png");
-    position: relative;
-    z-index: -1;
-    bottom: -15px;
-    left: 130px;
+/*YELLOW STRIPES FOR BLOG AND VESTI*/
+.path-blog #block-barbell-page-title h1.page-title:before,
+.path-vesti #block-barbell-page-title h1.page-title:before {
+  display: inline-block;
+  content: url("../img/page-title-bcg-med1.png");
+  position: relative;
+  z-index: -1;
+  bottom: -15px;
+  left: 135px;
 }
 
 #block-barbell-content {
-    margin: 100px;
+  margin: 100px;
 }
 
 #block-barbell-content div div .view-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    justify-content: space-between;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: space-between;
 }
 
-.article-thumb  {
-    text-align: center;
-    color: black;
+.article-thumb {
+  text-align: center;
+  color: black;
 }
 
 .article-thumb a {
-    text-decoration: none;
-    color: black;
-    font-family: "Brandon Grotesque Medium";
+  text-decoration: none;
+  color: black;
+  font-family: "Brandon Grotesque Medium";
 }
 
 .article-image {
-    background: dimgray;
+  background: dimgray;
 }
 
 .article-image div img {
-    width: 100%;
+  width: 100%;
 }
 
 .article-info-wrapper {
-    padding: 10px;
+  padding: 10px;
 }
 
 .article-info-wrapper .article-date div time {
-    color: var(--gray);
-    font-size: 12px;
+  color: var(--gray);
+  font-size: 12px;
 }
