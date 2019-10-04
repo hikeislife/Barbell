@@ -25,10 +25,10 @@
 
 h2 span:before {
     content:url('../img/page-title-bcg.png');
-    position: relative;
-    left: 100px;
+    position: absolute;
+    left: -25px;
     z-index: -1;
-    bottom: -12px;
+    bottom: -17px;
 }
 h2 {
     text-align: center;
@@ -48,7 +48,8 @@ h2 span {
 /* this is whitesmoke narrow text between title and button */
 .slider-desc div p {
     color: whitesmoke;
-    margin: 0 100px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 /* SLIDER BUTTON */
