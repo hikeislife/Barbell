@@ -23,7 +23,26 @@
   margin: 100px;
 }
 
-#block-barbell-content div div .view-content {
+.path-blog
+  div
+  .layout-container
+  main
+  .layout-content
+  div
+  #block-barbell-content
+  div
+  div
+  .view-content,
+.path-vesti
+  div
+  .layout-container
+  main
+  .layout-content
+  div
+  #block-barbell-content
+  div
+  div
+  .view-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -39,6 +58,9 @@
   text-decoration: none;
   color: black;
   font-family: "Brandon Grotesque Medium";
+}
+.article-thumb a:hover .article-info-wrapper .article-title {
+  color: whitesmoke;
 }
 
 .article-image {
