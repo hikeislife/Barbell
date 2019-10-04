@@ -1,0 +1,9 @@
+.path-programi .dialog-off-canvas-main-canvas .layout-container main div div #block-barbell-content div div div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.program-thumb a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
