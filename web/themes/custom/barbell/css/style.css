@@ -155,7 +155,7 @@ header div div .links {
 
 /* YELLOW STRIPES */
 .page-title .field--name-title:before,
-head .kontakt-block-content h3:before,
+.kontakt-block-content h3:before,
 #after_content div div h2:before {
   content: url("../img/page-title-bcg-med1.png");
   position: absolute;
