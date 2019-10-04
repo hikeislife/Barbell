@@ -8,10 +8,9 @@
 }
 
 html,
-body, 
+body,
 .layout-container {
   width: 100vw;
-  /* overflow-x: hidden; */
 }
 
 @font-face {
@@ -107,11 +106,11 @@ header div div .links {
   display: flex;
   align-items: center;
   width: 10px;
-    right: -20px;
+  right: -20px;
 }
 #block-languageswitcher ul {
-    right: 60px;
-  }
+  right: 60px;
+}
 
 #block-languageswitcher ul {
   position: relative;
