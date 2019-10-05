@@ -1,22 +1,38 @@
 .path-blog #block-barbell-page-title,
-.path-vesti #block-barbell-page-title {
-  height: 200px;
-  width: 100vw;
+.path-vesti #block-barbell-page-title,
+.path-tim #block-barbell-page-title,
+.path-programi #block-barbell-page-title {
+  /* height: 200px;
+  width: 100vw; */
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 120px;
 }
 
-.path-blog #block-barbell-page-title h1.page-title {
+/* .path-blog #block-barbell-page-title h1.page-title {
   margin-right: 230px;
+} */
+
+/*NO-SPAN TAGGED TITLES and YELLOW STRIPES FOR NO-SPAN TAGGED TITLES*/
+.path-blog h1.page-title,
+.path-vesti h1.page-title,
+.path-tim h1.page-title,
+.path-programi h1.page-title {
+  display: inline-block !important;
+  margin: 0 auto;
+  position: relative;
 }
 
-/*YELLOW STRIPES FOR BLOG AND VESTI*/
-.path-blog #block-barbell-page-title h1.page-title:before,
-.path-vesti #block-barbell-page-title h1.page-title:before {
-  display: inline-block;
+.path-blog .page-title:before,
+.path-vesti .page-title:before,
+.path-tim .page-title:before,
+.path-programi .page-title:before {
   content: url("../img/page-title-bcg-med1.png");
-  position: relative;
+  position: absolute;
   z-index: -1;
-  bottom: -15px;
-  left: 135px;
+  bottom: -19px;
+  left: -38px;
+  color: red;
 }
 
 #block-barbell-content {

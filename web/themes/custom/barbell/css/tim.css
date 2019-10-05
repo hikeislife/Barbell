@@ -1,77 +1,94 @@
-.path-tim div div main div div #block-barbell-content div .view-tim .view-content {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 100px;
-    justify-content: none;
-    margin: 0 auto;
+.path-tim
+  div
+  div
+  main
+  div
+  div
+  #block-barbell-content
+  div
+  .view-tim
+  .view-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
+  /* justify-content: none; */
+  /* margin: 0 auto; */
 }
 
 /* HR style */
 .box-division {
-    color: var(--yellow);
-    border: 2px solid;
-    width: 70px;
-    margin: 20px auto;
-   }
-   
+  color: var(--yellow);
+  border: 2px solid;
+  width: 70px;
+  margin: 20px auto;
+}
 
 .view-tim .view-content div div a:hover div {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .view-tim .view-content div div a .tim-image div img {
-    width: 100%;
+  width: 100%;
 }
 
 .view-tim {
-    width: 1000px;
-    margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .tim-thumb {
-    
-    text-align: center;
-    font-family: 'Brandon Grotesque Medium';
+  text-align: center;
+  font-family: "Brandon Grotesque Medium";
 }
 
 .tim-link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .tim-title {
-    font-family: 'Henry', sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    margin-top: 30px;
+  font-family: "Henry", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 30px;
 }
 
 .tim-description {
-    font-size: 28px;
-    margin-bottom: 50px;
-    
+  font-size: 28px;
+  margin-bottom: 50px;
 }
 
 .tim-description::before {
-    content: ' ';
-    display: block;
-    border-bottom: 3px solid var(--yellow);
-    width: 70px;
-    margin: 20px auto;
+  content: " ";
+  display: block;
+  border-bottom: 3px solid var(--yellow);
+  width: 70px;
+  margin: 20px auto;
 }
 
 .tim-description div {
-    padding: 10px;
+  padding: 10px;
 }
 
 /* uklanjanje bordera sa slike */
-.path-tim div div main .layout-content div div div .view-tim .view-content .views-row {
-    border: none;
+.path-tim
+  div
+  div
+  main
+  .layout-content
+  div
+  div
+  div
+  .view-tim
+  .view-content
+  .views-row {
+  border: none;
 }
 
 .tim-info-wrapper {
-    border: 3px solid var(--yellow);
+  border: 3px solid var(--yellow);
 }
 
 .tim-image {
-    margin: 0 0 -6px 0;
+  margin: 0 0 -6px 0;
 }
