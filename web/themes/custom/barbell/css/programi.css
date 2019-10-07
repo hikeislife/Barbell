@@ -18,16 +18,18 @@
   /* div pojedinog programa */
   .path-programi .view-content .views-row .program-thumb {
       margin: 0;
+      height: 100%;
   }
 
   .path-programi .view-content .views-row .program-thumb .program-link {
       display: grid;
       grid-template-columns: var(--oneHalf) var(--oneHalf);
+      height: 100%;
   }
 
   /* LEVA SLIKA */ 
   .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image {
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 15% 100%, 0% 100%);
     background: var(--yellow);
     
   }
@@ -53,7 +55,7 @@
   .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-image {
       background: var(--yellow);
       grid-column: 2/3;
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 85% 100%);
   }
 
   .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-info-wrapper {
@@ -61,12 +63,13 @@
       grid-row: 1/2;    
   }
 
-  /* .path-programi .view-content .views-row {
+  .path-programi .view-content .views-row {
     border: 3px solid transparent;
     color: black;
   }
 
   .path-programi .view-content .views-row:hover {
+    backgrond: black;
     border: 3px solid transparent!important;
-    background: transparent;
-  } */
+    /*background: transparent;*/
+  }
