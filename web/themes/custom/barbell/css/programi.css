@@ -1,6 +1,7 @@
 :root {
     --each: 400px; /* širina celog jednog program boxa */
     --oneHalf: 200px; /* širina slike / texta unutar jednog boxa */
+    --text: 350px;
   }
 
   /* spoljni grid koji drži po dva programa u jednom redu */
@@ -26,6 +27,11 @@
       grid-template-columns: var(--oneHalf) var(--oneHalf);
       height: 100%;
   }
+  /* .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-info-wrapper {
+    position: absolute;
+    border: 3px solid var(--yellow);
+    height: 100%;
+  } */
 
   /* LEVA SLIKA */ 
   .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image {

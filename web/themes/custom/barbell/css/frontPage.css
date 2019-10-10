@@ -149,3 +149,25 @@ h2 span {
   width: 70px;
   margin: 20px auto;
 }
+
+.path-frontpage .slick__arrow {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.slick-prev, .slick-next {
+  content: ' '!important;
+  background: var(--yellow);
+  visibility: hidden;
+}
+
+.slick-prev:before, .slick-next:before {
+  content: ' ';
+  background: var(--yellow);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 10;
+  visibility: visible;
+  display: inline-block;
+}
