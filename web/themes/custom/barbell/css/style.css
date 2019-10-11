@@ -32,14 +32,15 @@ body,
   font-style: normal;
   font-weight: normal;
   src: local("Brandon Grotesque Bold"),
-    url("brandon-grotesque-bold-587bd6400afd0.woff") format("woff");
+    url("brandon-grotesque-bold-587bd6400afd0.otf") format("otf");
 }
 
 @font-face {
   font-family: "Henry";
   font-style: normal;
   font-weight: normal;
-  src: local("Henry"), url("Henrik-Regular.otf") format("woff");
+  src: local("Henry"),
+    url("brandon-grotesque-bold-587bd6400afd0.otf") format("otf");
 }
 
 /* NAVIGATION */
@@ -139,12 +140,12 @@ header div div .links {
   position: absolute;
   font-weight: bold;
   font-size: 20px;
-  left: 89px;
+  left: 86px;
   top: 1px;
 }
 
 .language-link {
-  font-family: "Brandon Grotesque Bold";
+  font-family: "Brandon Grotesque Bold", sans-serif;
   text-transform: uppercase;
   color: black;
   text-decoration: none;
