@@ -130,7 +130,8 @@ h2 span {
 }
 
 .program-title span {
-  font-family: "Henrik";
+  font-family: "Henry";
+  text-transform: uppercase;
   font-size: 36px;
 }
 
