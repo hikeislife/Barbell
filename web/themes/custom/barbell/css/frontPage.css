@@ -39,6 +39,14 @@ h2 span:before {
   bottom: -26px;
 }
 
+@media only screen and (max-width: 768px) {
+  h2 span:before {
+    content: url("../img/page-title-bcg.png");
+    bottom: -15px;
+    left: -25px;
+  }
+}
+
 h2 {
   text-align: center;
   margin: 32vh auto 20px;
@@ -54,6 +62,13 @@ h2 span {
   position: relative;
   font-family: "Brandon Grotesque Bold", sans-serif;
 }
+@media only screen and (max-width: 768px) {
+   h2 span {
+    margin: 0;
+    font-size: 45px;
+  }
+  
+}
 
 /* this is whitesmoke narrow text between title and button */
 .slider-desc div p {
@@ -61,6 +76,12 @@ h2 span {
   width: 700px;
   margin: 25px auto;
   font-size: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .slider-desc div p {
+    width: 90vw;
+    margin-bottom: 10px !important;
+  }
 }
 
 /* SLIDER BUTTON */
@@ -75,6 +96,12 @@ h2 span {
   padding: 10px 53px;
 }
 
+@media only screen and (max-width: 768px) {
+  .slide .front-slider .slider-image .slider-content .slider-link div {
+    padding: 10px 20px;
+  }
+}
+
 /* MAIN CONTENT */
 .path-frontpage .node__content div {
   margin-top: 80px;
@@ -83,6 +110,13 @@ h2 span {
 
 .path-frontpage .field--name-body p {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .path-frontpage .field--name-body p {
+    margin: 0 20px;
+    font-size: 18px;
+  }
 }
 
 /* PROGRAMI */
@@ -96,6 +130,13 @@ h2 span {
   bottom: -15px;
   left: 123px;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .path-frontpage #after_content div div h2 {
+    margin: 0;
+    font-size: 45px;
+  }
+  
 }
 
 .path-frontpage .view-programi .view-content {

@@ -35,7 +35,8 @@
   color: red;
 }
 
-#block-barbell-content {
+.path-blog #block-barbell-content,
+.path-vesti #block-barbell-content {
   margin: 100px;
 }
 

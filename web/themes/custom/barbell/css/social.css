@@ -17,3 +17,13 @@
   #block-mainnavigation ul li {
     display: inline;
   }
+
+  @media only screen and (max-width: 768px) {
+    #block-mainnavigation ul li {
+      display: block;
+      
+    }
+    #block-mainnavigation ul {
+      margin: 20px;
+    }
+  }

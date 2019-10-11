@@ -162,6 +162,15 @@ header div div .links {
   letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 768px) {
+  .page-title,
+  .kontakt-block-content h3,
+  #after_content div div h2 {
+    margin: 0;
+    font-size: 45px;
+  }
+}
+
 .field--name-title,
 .kontakt-block-content h3 {
   position: relative;
@@ -175,10 +184,20 @@ header div div .links {
   position: absolute;
   z-index: -1;
 }
+
+@media only screen and (max-width: 768px) {
+  .page-title .field--name-title:before,
+  .kontakt-block-content h3:before,
+  #after_content div div h2:before {
+    content: url("../img/page-title-bcg.png");
+  }
+}
 .page-title .field--name-title:before {
   left: -25px;
   bottom: -27px;
 }
+
+
 
 .kontakt-block-content h3 {
   display: inline-block;
@@ -187,6 +206,14 @@ header div div .links {
 .kontakt-block-content h3:before {
   left: -39px;
   bottom: -21px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-title .field--name-title:before,
+  .kontakt-block-content h3:before {
+    left: -25px;
+    bottom: -15px;
+  }
 }
 
 /* MAIN TXT (all, except home page) */
@@ -223,6 +250,13 @@ header div div .links {
   border-radius: 45px;
 }
 
+@media only screen and (max-width: 768px) {
+  .field--name-field-link-button,
+  #block-zakazitetrening div p {
+    font-size: 20px;
+  }
+}
+
 .path-frontpage .field--name-field-link-button,
 #block-zakazitetrening div p {
   margin: 0 auto 90px;
@@ -254,8 +288,21 @@ footer {
   align-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .region-footer {
+    height: unset;
+  }
+}
+
 #block-yearname {
   color: var(--yellow);
+}
+
+@media only screen and (max-width: 768px) {
+  #block-yearname {
+    align-self: center;
+    display: grid;
+  }
 }
 
 #block-yearname div {
@@ -306,6 +353,12 @@ blockquote p {
   grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 768px) {
+  .front-kontakt-holder {
+    grid-template-columns: 1fr;
+  }
+}
+
 .kontakt-block-content {
   font-family: "Brandon Grotesque Bold", sans-serif;
   color: whitesmoke;
@@ -329,9 +382,21 @@ blockquote p {
   font-size: 43px;
 }
 
+@media only screen and (max-width: 768px) {
+  .kontakt-block-content .tel a {
+    font-size: 30px;
+  }
+}
+
 .kontakt-block-content .address {
   font-size: 33px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .kontakt-block-content .address {
+    font-size: 24px;
+  }
 }
 
 .kontakt-block-content .email {
@@ -343,6 +408,12 @@ blockquote p {
   text-decoration: none;
   font-size: 32px;
   margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .kontakt-block-content .email a {
+    font-size: 28px;
+  }
 }
 
 .kontakt-block-content .socials {
