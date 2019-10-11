@@ -27,17 +27,18 @@
 .path-vesti .page-title:before,
 .path-tim .page-title:before,
 .path-programi .page-title:before {
-  content: url("../img/page-title-bcg-med1.png");
+  content: url("../img/yellow-stripes-78.png");
   position: absolute;
   z-index: -1;
-  bottom: -19px;
-  left: -38px;
+  bottom: -16px;
+  left: -30px;
   color: red;
 }
 
 .path-blog #block-barbell-content,
 .path-vesti #block-barbell-content {
   margin: 100px;
+
 }
 
 .path-blog

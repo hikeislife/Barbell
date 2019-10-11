@@ -138,7 +138,7 @@ header div div .links {
   position: absolute;
   font-weight: bold;
   font-size: 20px;
-  left: 86px;
+  left: 89px;
   top: 1px;
 }
 
@@ -157,7 +157,7 @@ header div div .links {
   text-align: center;
   text-transform: uppercase;
   margin: 120px;
-  font-size: 76px;
+  font-size: 64px;
   font-family: "Henry", sans-serif;
   letter-spacing: 2px;
 }
@@ -180,7 +180,7 @@ header div div .links {
 .page-title .field--name-title:before,
 .kontakt-block-content h3:before,
 #after_content div div h2:before {
-  content: url("../img/page-title-bcg-med1.png");
+  content: url("../img/yellow-stripes-78.png");
   position: absolute;
   z-index: -1;
 }
@@ -193,8 +193,8 @@ header div div .links {
   }
 }
 .page-title .field--name-title:before {
-  left: -25px;
-  bottom: -27px;
+  left: -32px;
+  bottom: -15px;
 }
 
 
@@ -220,7 +220,7 @@ header div div .links {
 .field--name-body p {
   margin: 0 11%;
   font-family: "Brandon Grotesque Medium";
-  font-size: 24px;
+  font-size: 29px;
   text-align: justify;
 }
 
@@ -348,14 +348,27 @@ blockquote p {
 
 /* +++++++++++ KONTAKT +++++++++++ */
 
-.front-kontakt-holder {
+#pre_footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+
+
+
+#pre_footer .pre_footer_right,
+.pre_footer_right div {
+  height: 100%;
+}
+
+.front-kontakt-holder {
+  height: 100%;
+}
+
 @media only screen and (max-width: 768px) {
-  .front-kontakt-holder {
+  #pre_footer {
     grid-template-columns: 1fr;
+    height: unset;
   }
 }
 
