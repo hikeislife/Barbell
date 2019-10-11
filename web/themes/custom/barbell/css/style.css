@@ -201,6 +201,7 @@ header div div .links {
 .field--name-body p strong {
   font-family: "Brandon Grotesque Bold";
   font-size: 30px;
+  letter-spacing: 1px;
 }
 
 /* BUTTON (all, except home page)*/

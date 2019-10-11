@@ -126,7 +126,7 @@ h2 span {
 }
 
 .program-title span {
-  font-family: "Henrik";
+  font-family: "Henry";
   font-size: 26px;
 }
 
@@ -155,14 +155,16 @@ h2 span {
   padding-bottom: 10px;
 }
 
-.slick-prev, .slick-next {
-  content: ' '!important;
+.slick-prev,
+.slick-next {
+  content: " " !important;
   background: var(--yellow);
   visibility: hidden;
 }
 
-.slick-prev:before, .slick-next:before {
-  content: ' ';
+.slick-prev:before,
+.slick-next:before {
+  content: " ";
   background: var(--yellow);
   width: 20px;
   height: 20px;
