@@ -4,6 +4,17 @@
     --text: 350px;
   }
 
+  .path-programi .program-title span {
+    font-family: "Henry";
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  .path-programi .program-link {
+    color: black;
+    text-decoration: none;
+  }
+
   /* spoljni grid koji drži po dva programa u jednom redu */
   .path-programi .view-content {
       display: grid;
