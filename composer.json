@@ -28,6 +28,7 @@
         "drupal/core": "^8.7.0",
         "drupal/devel": "2.x-dev",
         "drupal/entity_clone": "1.x-dev",
+        "drupal/responsive_menus": "1.x-dev",
         "drupal/slick": "^2.0",
         "drupal/slick_views": "^2.0",
         "drush/drush": "^9.0.0",
