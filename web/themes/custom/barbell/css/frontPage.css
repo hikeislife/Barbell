@@ -32,11 +32,11 @@
 }
 
 h2 span:before {
-  content: url("../img/page-title-bcg-med1.png");
+  content: url("../img/yellow-stripes-78.png");
   position: absolute;
-  left: -39px;
+  left: -29px;
   z-index: -1;
-  bottom: -26px;
+  bottom: -16px;
 }
 
 h2 {
@@ -49,7 +49,7 @@ h2 span {
   text-transform: uppercase;
   color: whitesmoke;
   margin: 120px;
-  font-size: 76px;
+  font-size: 64px;
   left: 20px;
   position: relative;
   font-family: "Brandon Grotesque Bold", sans-serif;
