@@ -31,16 +31,14 @@ body,
   font-family: "Brandon Grotesque Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Brandon Grotesque Bold"),
-    url("brandon-grotesque-bold-587bd6400afd0.otf") format("otf");
+  src: local("Brandon Grotesque Bold"), url("Brandon_blk.otf") format("otf");
 }
 
 @font-face {
   font-family: "Henry";
   font-style: normal;
   font-weight: normal;
-  src: local("Henry"),
-    url("brandon-grotesque-bold-587bd6400afd0.otf") format("otf");
+  src: local("Henry"), url("Brandon_blk.otf") format("otf");
 }
 
 /* NAVIGATION */
