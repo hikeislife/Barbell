@@ -111,10 +111,16 @@ h2 span {
   text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+  .path-frontpage .field--name-body p {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .path-frontpage .field--name-body p {
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
