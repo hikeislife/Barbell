@@ -365,6 +365,11 @@ blockquote p {
     grid-template-columns: 1fr;
     height: unset;
   }
+
+  #pre_footer .pre_footer_right,
+  .pre_footer_right div {
+    height: 175px;
+  }
 }
 
 .kontakt-block-content {
@@ -431,4 +436,22 @@ blockquote p {
 
 .kontakt-block-content .socials span {
   margin: 0 5px;
+}
+
+/* CONTACT - MAP */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .page-title,
+  .kontakt-block-content h3,
+  #after_content div div h2 {
+    /* margin: 0; */
+    font-size: 53px;
+  }
+
+  .kontakt-block-content .tel a {
+    font-size: 38px;
+  }
+
+  .kontakt-block-content .address {
+    font-size: 28px;
+  }
 }
