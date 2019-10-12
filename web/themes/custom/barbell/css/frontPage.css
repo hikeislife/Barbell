@@ -63,11 +63,10 @@ h2 span {
   font-family: "Brandon Grotesque Bold", sans-serif;
 }
 @media only screen and (max-width: 768px) {
-   h2 span {
+  h2 span {
     margin: 0;
     font-size: 45px;
   }
-  
 }
 
 /* this is whitesmoke narrow text between title and button */
@@ -125,35 +124,38 @@ h2 span {
 }
 #after_content div div h2 {
   display: inline-block;
+  position: relative;
 }
 #after_content div div h2:before {
   bottom: -15px;
-  left: 123px;
-  position: relative;
+  left: -22px;
 }
 @media only screen and (max-width: 768px) {
   .path-frontpage #after_content div div h2 {
     margin: 0;
     font-size: 45px;
   }
-  
 }
 
 .path-frontpage .view-programi .view-content {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-  /* grid-template-columns: repeat(4, minmax(1fr, 230px)); */
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
   margin: -70px 170px 40px;
-  /* height: 230px; */
+  justify-content: center;
 }
 
 .path-frontpage .view-content .views-row {
   border: 3px solid var(--yellow);
+  margin: 0 auto;
   color: black;
   width: 300px;
   height: 300px;
+}
+
+.path-frontpage .view-programi .view-content:nth-child(1),
+.path-frontpage .view-programi .view-content:nth-child(2) {
+  grid-column: 1/2;
 }
 
 .view-content .views-row:hover {
@@ -219,4 +221,25 @@ h2 span {
   z-index: 10;
   visibility: visible;
   display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .path-frontpage .view-programi .view-content {
+    grid-gap: 25px;
+    margin: -70px 12% 40px;
+  }
+
+  .path-frontpage .view-content .views-row {
+    width: 250px;
+    height: 250px;
+  }
+
+  .path-frontpage .program-title span {
+    font-size: 29px;
+  }
+
+  .path-frontpage .program-description div {
+    font-size: 25px;
+    line-height: 27px;
+  }
 }
