@@ -1,29 +1,49 @@
 #block-sociallinks div {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 39px;
-    color: whitesmoke !important;
-  }
-  
-  #block-sociallinks div a {
-    color: whitesmoke !important;
-  }
-  
-  #block-mainnavigation,
-  #block-mainnavigation h2,
-  #block-mainnavigation ul,
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 39px;
+  color: whitesmoke !important;
+}
+
+#block-sociallinks div a {
+  color: whitesmoke !important;
+}
+
+#block-mainnavigation,
+#block-mainnavigation h2,
+#block-mainnavigation ul,
+#block-mainnavigation ul li {
+  display: inline;
+}
+
+@media only screen and (max-width: 768px) {
   #block-mainnavigation ul li {
-    display: inline;
+    display: block;
+    padding-left: 35px;
+  }
+  #block-mainnavigation ul {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #block-sociallinks div a {
+    margin: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #block-sociallinks {
+    margin-right: 30px;
   }
 
-  @media only screen and (max-width: 768px) {
-    #block-mainnavigation ul li {
-      display: block;
-      
-    }
-    #block-mainnavigation ul {
-      margin: 20px;
-    }
+  #block-sociallinks div {
+    font-size: 30px;
   }
+
+  #block-sociallinks div a {
+    margin: 0 4px;
+  }
+}
