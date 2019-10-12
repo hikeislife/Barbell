@@ -122,14 +122,17 @@ h2 span {
 #after_content div div {
   text-align: center;
 }
+
 #after_content div div h2 {
   display: inline-block;
   position: relative;
 }
+
 #after_content div div h2:before {
   bottom: -15px;
   left: -22px;
 }
+
 @media only screen and (max-width: 768px) {
   .path-frontpage #after_content div div h2 {
     margin: 0;
