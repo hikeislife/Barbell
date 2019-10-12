@@ -135,7 +135,7 @@ h2 span {
 
 @media only screen and (max-width: 768px) {
   .path-frontpage #after_content div div h2 {
-    margin: 0;
+    /* margin: 0; */
     font-size: 45px;
   }
 }
@@ -226,6 +226,16 @@ h2 span {
   display: inline-block;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  .path-frontpage .view-programi .view-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 25px;
+    margin: -70px 170px 40px;
+    justify-content: center;
+  }
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .path-frontpage .view-programi .view-content {
     grid-gap: 25px;
@@ -244,5 +254,84 @@ h2 span {
   .path-frontpage .program-description div {
     font-size: 25px;
     line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .path-frontpage .view-content .views-row {
+    width: 200px;
+    height: 200px;
+  }
+
+  .path-frontpage .program-title span {
+    font-size: 24px;
+  }
+
+  .path-frontpage .program-description div {
+    font-size: 19px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .path-frontpage .view-content .views-row {
+    width: 250px;
+    height: 250px;
+  }
+
+  .path-frontpage .program-title span {
+    font-size: 29px;
+  }
+
+  .path-frontpage .program-description div {
+    font-size: 25px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .path-frontpage .view-programi .view-content {
+    grid-gap: 15px;
+    margin: -70px 12% 40px;
+  }
+
+  .path-frontpage .view-content .views-row {
+    width: 200px;
+    height: 200px;
+  }
+
+  .path-frontpage .program-title span {
+    font-size: 23px;
+  }
+
+  .path-frontpage .program-description div {
+    font-size: 19px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .path-frontpage .view-programi .view-content {
+    grid-gap: 15px;
+    margin: -70px 12% 40px;
+  }
+
+  .path-frontpage .view-content .views-row {
+    width: 140px;
+    height: 150px;
+  }
+
+  .path-frontpage .program-title span {
+    font-size: 14px;
+  }
+
+  .path-frontpage .program-description div {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .path-frontpage .program-description div:before,
+  .path-programi .program-description div:before {
+    margin: 10px auto;
   }
 }
