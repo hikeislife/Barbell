@@ -1,0 +1,92 @@
+:root {
+    --each: 400px; /* širina celog jednog program boxa */
+    --oneHalf: 200px; /* širina slike / texta unutar jednog boxa */
+    --text: 350px;
+  }
+
+  .path-programi .program-title span {
+    font-family: "Henry";
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  .path-programi .program-link {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* spoljni grid koji drži po dva programa u jednom redu */
+  .path-programi .view-content {
+      display: grid;
+      grid-template-columns: var(--each) var(--each);
+      justify-content: space-around;
+  }
+
+  .path-programi .view-content .views-row {
+      height: 233px;
+      overflow: hidden;
+  }
+
+  /* div pojedinog programa */
+  .path-programi .view-content .views-row .program-thumb {
+      margin: 0;
+      height: 100%;
+  }
+
+  .path-programi .view-content .views-row .program-thumb .program-link {
+      display: grid;
+      grid-template-columns: var(--oneHalf) var(--oneHalf);
+      height: 100%;
+  }
+  /* .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-info-wrapper {
+    position: absolute;
+    border: 3px solid var(--yellow);
+    height: 100%;
+  } */
+
+  /* LEVA SLIKA */ 
+  .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image {
+    clip-path: polygon(0 0, 100% 0%, 15% 100%, 0% 100%);
+    background: var(--yellow);
+    
+  }
+  .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image img {
+    overflow: hidden;
+  }
+
+/* LEVI TEXT */
+.path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-title {
+    position: relative;
+    right: 10px;
+    padding: 10px;
+}
+
+/* DESNI TEXT */
+.path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-title {
+    /* position: relative;
+    right: 10px; */
+    padding: 10px;
+}
+
+  /* OKRETANJE PARNIH PROGRAMA NA DRUGU STRANU */
+  .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-image {
+      background: var(--yellow);
+      grid-column: 2/3;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 85% 100%);
+  }
+
+  .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-info-wrapper {
+      grid-column: 1/2;
+      grid-row: 1/2;    
+  }
+
+  .path-programi .view-content .views-row {
+    border: 3px solid transparent;
+    color: black;
+  }
+
+  .path-programi .view-content .views-row:hover {
+    backgrond: black;
+    border: 3px solid transparent!important;
+    /*background: transparent;*/
+  }

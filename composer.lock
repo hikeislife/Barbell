@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16af204ccc56b44b3e0e911f86404b47",
+    "content-hash": "b60eedeb90f7d5f21cf0902031aa5c4c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3003,6 +3003,48 @@
                 "source": "https://git.drupalcode.org/project/entity_clone"
             },
             "time": "2019-04-29T12:18:02+00:00"
+        },
+        {
+            "name": "drupal/responsive_menus",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/responsive_menus.git",
+                "reference": "d58325af394be9e59da176981f60f37466ef3b48"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1471448909",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jwjoshuawalker",
+                    "homepage": "https://www.drupal.org/user/433663"
+                }
+            ],
+            "description": "Responsify any menu using CSS Selectors.",
+            "homepage": "https://www.drupal.org/project/responsive_menus",
+            "support": {
+                "source": "https://git.drupalcode.org/project/responsive_menus"
+            },
+            "time": "2016-08-17T15:48:24+00:00"
         },
         {
             "name": "drupal/slick",
@@ -8996,7 +9038,8 @@
     "stability-flags": {
         "drupal/backup_migrate": 20,
         "drupal/devel": 20,
-        "drupal/entity_clone": 20
+        "drupal/entity_clone": 20,
+        "drupal/responsive_menus": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

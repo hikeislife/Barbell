@@ -1,0 +1,454 @@
+:root {
+  --yellow: #f6b018;
+  --gray: #919191;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.layout-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* FOOTER EXTRA SPACE SOLUTION */
+#block-mainnavigation-menu {
+  display: none !important;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Medium"),
+    url("brandon-grotesque-medium-587bd623e472a.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Brandon Grotesque Bold"), url("Brandon_blk.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Henry";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Henry"), url("Brandon_blk.otf") format("woff");
+}
+
+/* NAVIGATION */
+header div,
+#block-barbell-branding,
+#block-barbell-branding a img,
+#block-barbell-branding div,
+header div nav,
+header div nav h2,
+header div nav div,
+header div nav ul,
+header div nav ul li,
+.language-switcher-language-url,
+.language-switcher-language-url div,
+header div div div,
+ul.links,
+li.en,
+li.sr {
+  display: inline;
+}
+
+header div {
+  display: grid;
+  grid-template-columns: 33% auto 7%;
+  height: 75px;
+  background: var(--yellow);
+  width: 100vw;
+  align-items: center;
+}
+
+/* NAV LOGO */
+#block-barbell-branding {
+  clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+  width: 100%;
+  background: black;
+  height: 100%;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: middle;
+  /* background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+#block-barbell-branding a img {
+  display: inline-block;
+  margin-right: 62px;
+  width: 290px;
+  padding: 19px 0;
+}
+
+/* NAV MAIN */
+#block-barbell-main-menu ul li {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#block-barbell-main-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Brandon Grotesque Medium";
+  font-size: 17px;
+}
+
+/* Language switcher */
+header div div .links {
+  align-items: center;
+}
+
+.language-switcher-language-url {
+  display: flex;
+  align-items: center;
+  width: 0;
+  right: -20px;
+}
+#block-languageswitcher ul {
+  right: 60px;
+}
+
+#block-languageswitcher ul {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+}
+
+#block-languageswitcher ul li {
+  margin: 0 7px;
+  font-size: 18px;
+}
+
+.en:after {
+  content: "\\";
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  left: 89px;
+  top: 1px;
+}
+
+.language-link {
+  font-family: "Brandon Grotesque Bold", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  display: inline-grid;
+}
+
+/* PAGE TITLE */
+.page-title,
+.kontakt-block-content h3,
+#after_content div div h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 145px auto;
+  font-size: 64px;
+  font-family: "Henry", sans-serif;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-title,
+  .kontakt-block-content h3,
+  #after_content div div h2 {
+    /* margin: 0; */
+    font-size: 45px;
+  }
+}
+
+.field--name-title,
+.kontakt-block-content h3 {
+  position: relative;
+}
+
+/* YELLOW STRIPES */
+.page-title .field--name-title:before,
+.kontakt-block-content h3:before,
+#after_content div div h2:before {
+  content: url("../img/yellow-stripes-78.png");
+  position: absolute;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-title .field--name-title:before,
+  .kontakt-block-content h3:before,
+  #after_content div div h2:before {
+    content: url("../img/page-title-bcg.png");
+  }
+}
+.page-title .field--name-title:before {
+  left: -32px;
+  bottom: -15px;
+}
+
+.kontakt-block-content h3 {
+  display: inline-block;
+}
+
+.kontakt-block-content h3:before {
+  left: -39px;
+  bottom: -21px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-title .field--name-title:before,
+  .kontakt-block-content h3:before {
+    left: -25px;
+    bottom: -15px;
+  }
+}
+
+/* MAIN TXT (all, except home page) */
+.field--name-body p {
+  margin: 0 11%;
+  font-family: "Brandon Grotesque Medium";
+  font-size: 29px;
+  text-align: justify;
+}
+
+/* bold prices txt */
+.field--name-body p strong {
+  font-family: "Brandon Grotesque Bold";
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+/* BUTTON (all, except home page)*/
+.node__content,
+#block-zakazitetrening div {
+  display: grid;
+  position: relative;
+}
+
+.field--name-field-link-button,
+#block-zakazitetrening div p {
+  background: var(--yellow);
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 25px 50px;
+  font-size: 27px;
+  margin: 90px auto 90px;
+  border-radius: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+  .field--name-field-link-button,
+  #block-zakazitetrening div p {
+    font-size: 20px;
+  }
+}
+
+.path-frontpage .field--name-field-link-button,
+#block-zakazitetrening div p {
+  margin: 0 auto 90px;
+}
+
+#block-zakazitetrening div p {
+  margin-top: 70px auto 70px;
+}
+
+.field--name-field-link-button a,
+#block-zakazitetrening div p a {
+  color: white;
+  text-decoration: none;
+  font-family: "Brandon Grotesque Medium";
+}
+
+/* FOOTER */
+footer {
+  height: 100px;
+}
+
+.region-footer {
+  /* black bar wrapper */
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 30% auto 20%;
+  background: black;
+  align-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .region-footer {
+    height: unset;
+  }
+}
+
+#block-yearname {
+  color: var(--yellow);
+}
+
+@media only screen and (max-width: 768px) {
+  #block-yearname {
+    align-self: center;
+    display: grid;
+  }
+}
+
+#block-yearname div {
+  width: 100%;
+  margin: 0;
+  margin-top: 3px;
+}
+
+footer div nav {
+  display: inline;
+  color: white;
+  align-self: center;
+}
+
+footer div nav ul li a {
+  color: dimgray;
+  text-decoration: none;
+  font-family: "Brandon Grotesque Medium";
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+footer div nav ul.menu a.is-active {
+  color: dimgray;
+}
+
+#block-sociallinks {
+  display: flex;
+  align-items: center;
+}
+
+/* BLOCKQUOTE */
+blockquote p {
+  text-transform: uppercase;
+  font-family: "Henry", sans-serif !important;
+  text-align: center !important;
+  font-size: 74px !important;
+  margin: 80px 0 0 !important;
+}
+
+/* +++++++++++ KONTAKT +++++++++++ */
+
+#pre_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#pre_footer .pre_footer_right,
+.pre_footer_right div {
+  height: 100%;
+}
+
+.front-kontakt-holder {
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #pre_footer {
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+
+  #pre_footer .pre_footer_right,
+  .pre_footer_right div {
+    height: 175px;
+  }
+}
+
+.kontakt-block-content {
+  font-family: "Brandon Grotesque Bold", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  background: gray;
+}
+
+.kontakt-block-content h3 {
+  font-family: "Henry", sans-serif;
+  margin: 220px 0 80px;
+  z-index: 1;
+}
+
+.kontakt-block-content .tel {
+  margin-bottom: 35px;
+}
+
+.kontakt-block-content .tel a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 43px;
+}
+
+@media only screen and (max-width: 768px) {
+  .kontakt-block-content .tel a {
+    font-size: 30px;
+  }
+}
+
+.kontakt-block-content .address {
+  font-size: 33px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .kontakt-block-content .address {
+    font-size: 24px;
+  }
+}
+
+.kontakt-block-content .email {
+  margin-bottom: 80px;
+}
+
+.kontakt-block-content .email a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-size: 32px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .kontakt-block-content .email a {
+    font-size: 28px;
+  }
+}
+
+.kontakt-block-content .socials {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.kontakt-block-content .socials span {
+  margin: 0 5px;
+}
+
+/* CONTACT - MAP */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .page-title,
+  .kontakt-block-content h3,
+  #after_content div div h2 {
+    /* margin: 0; */
+    font-size: 53px;
+  }
+
+  .kontakt-block-content .tel a {
+    font-size: 38px;
+  }
+
+  .kontakt-block-content .address {
+    font-size: 28px;
+  }
+}
