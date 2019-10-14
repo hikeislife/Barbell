@@ -3004,8 +3004,6 @@
             "time": "2019-04-29T12:18:02+00:00"
         },
         {
-<<<<<<< HEAD
-=======
             "name": "drupal/fontawesome",
             "version": "2.14.0",
             "source": {
@@ -3070,17 +3068,12 @@
             }
         },
         {
->>>>>>> master
             "name": "drupal/responsive_menus",
             "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/responsive_menus.git",
-<<<<<<< HEAD
-                "reference": "d58325af394be9e59da176981f60f37466ef3b48"
-=======
                 "reference": "969d9cbe0c569d90d1d7c793425b395277f233f3"
->>>>>>> master
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3114,11 +3107,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/responsive_menus"
             },
-<<<<<<< HEAD
-            "time": "2016-08-17T15:48:24+00:00"
-=======
             "time": "2019-10-08T22:40:34+00:00"
->>>>>>> master
         },
         {
             "name": "drupal/slick",
