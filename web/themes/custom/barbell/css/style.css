@@ -292,8 +292,9 @@ footer {
   }
 }
 
-#block-yearname {
+#block-yearname div p {
   color: var(--yellow);
+  text-align: left;
 }
 
 @media only screen and (max-width: 768px) {
