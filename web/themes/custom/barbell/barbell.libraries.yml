@@ -12,3 +12,9 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      css/funkcTreninzi.css: {}
+      css/frontPage.css: {}
+      css/social.css: {}
+      css/blog.css: {}
+      css/tim.css: {}
+      css/programi.css: {}

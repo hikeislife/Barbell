@@ -1,0 +1,151 @@
+.path-blog #block-barbell-page-title,
+.path-vesti #block-barbell-page-title,
+.path-tim #block-barbell-page-title,
+.path-programi #block-barbell-page-title {
+  /* height: 200px;
+  width: 100vw; */
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+
+
+/* NO-SPAN TAGGED TITLES and YELLOW STRIPES FOR NO-SPAN TAGGED TITLES */
+.path-blog h1.page-title,
+.path-vesti h1.page-title,
+.path-tim h1.page-title,
+.path-programi h1.page-title {
+  display: inline-block !important;
+  margin: 0 auto;
+  position: relative;
+}
+
+.path-blog .page-title:before,
+.path-vesti .page-title:before,
+.path-tim .page-title:before,
+.path-programi .page-title:before {
+  content: url("../img/yellow-stripes-78.png");
+  position: absolute;
+  z-index: -1;
+  bottom: -16px;
+  left: -30px;
+  color: red;
+}
+
+.path-blog #block-barbell-content,
+.path-vesti #block-barbell-content {
+  margin: 100px;
+}
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .path-blog #block-barbell-content,
+  .path-vesti #block-barbell-content {
+    margin: 20px;
+  }
+}
+.path-blog div .layout-container main .layout-content,
+.path-vesti div .layout-container main .layout-content {
+  margin: 0 7%;
+}
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .path-blog div .layout-container main .layout-content,
+  .path-vesti div .layout-container main .layout-content {
+    margin: 0 2vw;
+  }
+}
+
+.path-blog .image-style-medium,
+.path-vesti .image-style-medium {
+  padding-top: 100%!important;
+}
+
+.path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
+.path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
+  .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
+  .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
+  .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.path-blog .article-thumb,
+.path-vesti .article-thumb {
+  text-align: center;
+  color: black;
+}
+.path-blog .views-row,
+.path-vesti .views-row {
+  border: 2px solid var(--yellow);
+}
+
+
+
+.article-thumb a {
+  text-decoration: none;
+  color: black;
+  font-family: "Brandon Grotesque Medium";
+}
+.path-blog .article-thumb a:hover .article-info-wrapper .article-title,
+.path-vesti .article-thumb a:hover .article-info-wrapper .article-title {
+  color: whitesmoke;
+}
+
+/* Article title */
+.path-blog .article-thumb .article-info-wrapper .article-title span,
+.path-vesti .article-thumb .article-info-wrapper .article-title span {
+  font-size: 4.65vmin;
+}
+@media only screen and (min-width: 320px) and (max-width: 1500px) {
+  .path-blog .article-thumb .article-info-wrapper .article-title span,
+  .path-vesti .article-thumb .article-info-wrapper .article-title span {
+    font-size: 4vmin;
+  }
+} 
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .path-blog .article-thumb .article-info-wrapper .article-title span,
+  .path-vesti .article-thumb .article-info-wrapper .article-title span {
+    font-size: 3vmin;
+  }
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .path-blog .article-thumb .article-info-wrapper .article-title span,
+  .path-vesti .article-thumb .article-info-wrapper .article-title span {
+    font-size: 6vmin;
+  }
+}
+
+.article-image {
+  background: dimgray;
+}
+
+.article-image div img {
+  width: 100%;
+}
+
+.article-info-wrapper {
+  padding: 10px;
+}
+
+.article-info-wrapper .article-date div time {
+  color: var(--gray);
+  font-size: 30px;
+}

@@ -6,7 +6,10 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+
+#/web/libraries/
 /modules/
+/1modules/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
@@ -28,3 +31,6 @@
 /web/themes/custom/barbell/css/example.html
 /web/themes/custom/barbell/css/brandon-grotesque-thin-587bd5b76cfba.woff
 /web/sites/default/local.services.yml
+/web/sites/default/1local.services.yml
+/web/themes/custom/barbell/css/Henrik/
+/web/themes/custom/barbell/css/__MACOSX/

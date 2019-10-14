@@ -73,12 +73,11 @@
 {{ attach_library('classy/node') }}
 
 <div class="program-thumb">
-  <a class="program-link" href="{{ url }}">
-    <div class="program-image">{{ content.field_thumb_image }}</div>
+  <a class="program-link"  href="{{ url }}">
+    <div class="program-image" style='background-image: url("{{ content.field_thumb_image.0 }}");'></div>
     <div class="program-info-wrapper">
       <div class="program-title">{{ label }}</div>
       <div class="program-description">{{ content.body }}</div>
     </div>
   </a>
 </div>
-
