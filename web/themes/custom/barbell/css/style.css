@@ -1,6 +1,48 @@
 :root {
-  --yellow: #f6b018;
-  --gray: #919191;
+    --yellow: #f6b018;
+    --gray: #919191;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brandon Grotesque Medium'), url('brandon-grotesque-medium-587bd623e472a.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brandon Grotesque Bold'), url('brandon-grotesque-bold-587bd6400afd0.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Henry';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Henry'), url('Henrik-Regular.otf') format('woff');
+}
+
+/* NAVIGATION */
+header div, #block-barbell-branding, #block-barbell-branding a img, #block-barbell-branding div, 
+header div nav, header div nav h2, header div nav div, 
+header div nav ul, header div nav ul li, 
+.language-switcher-language-url, .language-switcher-language-url div, header div div div, ul.links, li.en, li.sr {
+    display: inline;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 30% auto 10%;
+    height: 60px;
+    background: var(--yellow);
+    width: 100%;
+    align-items: center;
 }
 
 * {
@@ -71,6 +113,18 @@ header div {
 
 /* NAV LOGO */
 #block-barbell-branding {
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    width: 100%;
+    background: black;
+    height: 60px;
+    text-align: right;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+#block-barbell-branding a img { 
+    display: inline-block;
+    margin-right: 80px;
   clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
   width: 100%;
   background: black;
@@ -92,10 +146,18 @@ header div {
 
 /* NAV MAIN */
 #block-barbell-main-menu ul li {
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 20px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#block-barbell-main-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Brandon Grotesque Medium';
+    text-transform: uppercase;
+    margin-right: 20px;
 }
 
 #block-barbell-main-menu ul li a {
@@ -107,8 +169,46 @@ header div {
 
 /* Language switcher */
 header div div .links {
-  align-items: center;
+    align-items: center;
 }
+
+#block-languageswitcher ul {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+.language-link {
+    font-family: 'Brandon Grotesque Bold';
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    display: inline-grid;
+    
+}
+
+/*  */
+.page-title:before {
+    content:url('../img/page-title-bcg.png');
+    position: relative;
+    left: 100px;
+    z-index: -1;
+    bottom: -12px;
+}
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 120px;
+    font-size: 60px;
+    position: relative;
+    font-family: 'Henry';
+    left: -30px;
+}
+
+/* .page-title span {
+    z-index: 50;
+} */
 
 .language-switcher-language-url {
   display: flex;
@@ -295,6 +395,7 @@ footer {
 #block-yearname div p {
   color: var(--yellow);
   text-align: left;
+
 }
 
 @media only screen and (max-width: 768px) {
