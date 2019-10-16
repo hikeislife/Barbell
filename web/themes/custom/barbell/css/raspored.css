@@ -14,8 +14,6 @@ td, th {
 }
 
 td div {
-  display: inline-grid;
-  align-content: center;
   text-align: center;
 }
 th {
@@ -61,12 +59,32 @@ tr > th {
   height: 100%;
   margin: 0;
 }
+
 .raspored-as {
   background: #e3e3e3;
 }
+
 .raspored-ft {
   background: #e3e3e3;
 }
+
 .raspored-se {
   background: #e3e3e3;
+}
+
+.rasporedText {
+  font-family: "Brandon Grotesque Bold" !important;
+  text-align: center !important;
+  font-size: 22px !important;
+  margin: 0 !important;
+  padding: 0 10px !important;
+}
+
+.rasporedImgWrapper {
+  height: 60%;
+}
+
+.rasporedImgWrapper img {
+  height: 86%;
+  padding-top: 13px;
 }

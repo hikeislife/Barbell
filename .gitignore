@@ -35,8 +35,11 @@
 /web/sites/default/local.services.yml
 /web/sites/default/1local.services.yml
 /web/themes/custom/barbell/css/Henrik/
-<<<<<<< HEAD
 /web/themes/custom/barbell/css/__MACOSX/
-=======
-/web/themes/custom/barbell/css/__MACOSX/
->>>>>>> master
+
+# Kata
+.vscode/
+web/themes/custom/barbell/img/aics.png
+web/themes/custom/barbell/img/barbell logo.psd
+web/themes/custom/barbell/img/se.png
+web/themes/custom/barbell/img/fe.png
