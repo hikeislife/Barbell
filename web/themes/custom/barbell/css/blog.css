@@ -29,7 +29,7 @@
   z-index: -1;
   bottom: -16px;
   left: -30px;
-  color: red;
+  /* color: red; */
 }
 
 .path-blog #block-barbell-content,
@@ -42,10 +42,7 @@
     margin: 20px;
   }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 .path-blog div .layout-container main .layout-content,
 .path-vesti div .layout-container main .layout-content {
   margin: 0 7%;
@@ -69,26 +66,36 @@
   grid-gap: 20px;
   justify-content: space-between;
 }
-@media only screen and (min-width: 320px) and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
   .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 2vw;
+  }
+  .path-blog #block-barbell-content, .path-vesti #block-barbell-content {
+    margin: 0;
+  }
+  .path-blog .article-thumb .article-info-wrapper .article-title span,
+  .path-vesti .article-thumb .article-info-wrapper .article-title span {
+    font-size: 1.7rem;
+    line-height: 24px;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 900px) {
+@media only screen and (max-width: 576px) {
   .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
   .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 2px;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 700px) {
+/* @media only screen and (min-width: 320px) and (max-width: 700px) {
   .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
   .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 .path-blog .article-thumb,
 .path-vesti .article-thumb {
@@ -98,6 +105,8 @@
 .path-blog .views-row,
 .path-vesti .views-row {
   border: 2px solid var(--yellow);
+  position: relative;
+  padding-bottom: 40px;
 }
 
 
@@ -107,8 +116,8 @@
   color: black;
   font-family: "Brandon Grotesque Medium";
 }
-.path-blog .article-thumb a:hover .article-info-wrapper .article-title,
-.path-vesti .article-thumb a:hover .article-info-wrapper .article-title {
+.path-blog .views-row:hover .article-title span,
+.path-vesti .views-row:hover .article-title span {
   color: whitesmoke;
 }
 
@@ -151,5 +160,9 @@
 
 .article-info-wrapper .article-date div time {
   color: var(--gray);
-  font-size: 30px;
+  font-size: 2vw;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%);
 }

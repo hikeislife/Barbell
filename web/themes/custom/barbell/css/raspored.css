@@ -1,0 +1,72 @@
+.node__content > div:nth-child(1) > table:nth-child(1) {
+ width: 85%!important;
+ margin: 0 auto 50px;
+ border-spacing: 11px;
+ border-collapse: separate;
+ border-color: transparent;
+}
+
+td, th {
+  border-color: transparent;
+  padding: 0;
+  text-align: center;
+  
+}
+
+td div {
+  display: inline-grid;
+  align-content: center;
+  text-align: center;
+}
+th {
+  background-color: var(--yellow);
+}
+tr td {
+  height:170px;
+  width: 16%;
+  /* background: #e3e3e3; */
+  background-image: url(../img/empty-raspored.png);
+  background-size: cover;
+  background-repeat: round;
+  border: none;
+}
+thead > tr {
+  height: 40px;
+  overflow-y: hidden;
+}
+thead > tr > th {
+  padding: 10px;
+  display: table-cell;
+  height: 20px;
+  font-family: 'Brandon Grotesque Medium';
+}
+tr > th,
+thead > tr > th:first-child {
+  width: 77px;
+  margin: 0;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+thead > tr > th:first-child {
+  padding: 45%;
+}
+tr > th {
+  padding: 91% 5px;
+}
+.raspored-as,
+.raspored-ft,
+.raspored-se {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.raspored-as {
+  background: #e3e3e3;
+}
+.raspored-ft {
+  background: #e3e3e3;
+}
+.raspored-se {
+  background: #e3e3e3;
+}
