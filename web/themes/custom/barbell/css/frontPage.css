@@ -211,6 +211,9 @@ h2 span {
   display: block;
   border-bottom: 3px solid var(--yellow);
   width: 70px;
+}
+
+.path-frontpage .program-description div:before {
   margin: 20px auto;
 }
 
