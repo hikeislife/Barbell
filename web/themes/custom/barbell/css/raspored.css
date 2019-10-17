@@ -23,7 +23,7 @@ tr td {
   height:170px;
   width: 16%;
   /* background: #e3e3e3; */
-  background-image: url(../img/empty-raspored.png);
+  background-image: url("../img/empty-raspored.png");
   background-size: cover;
   background-repeat: round;
   border: none;
