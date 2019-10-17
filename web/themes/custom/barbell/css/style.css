@@ -1,12 +1,7 @@
 :root {
-<<<<<<< HEAD
-    --yellow: #f6b018;
-    --gray: #919191;
-    --black: #231f20;
-=======
   --yellow: #f6b018;
   --gray: #919191;
->>>>>>> 0495c7a80a9ad9cea2d4ca3a24b6d359fcd72f14
+  --black: #231f20;
 }
 
 * {
