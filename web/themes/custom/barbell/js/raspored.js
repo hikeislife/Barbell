@@ -1,10 +1,11 @@
 Drupal.behaviors.exampleModule = {
   attach: function (context, settings) {
     
-    var td = document.querySelectorAll('td div')
+    let td = document.querySelectorAll('td div')
     td = [...td]
-    var text = ''
-    var icon = ''
+    let text = ''
+    let icon = ''
+
     td.forEach(x => {
       if (x.classList[0] === 'raspored-ft') {
         text = 'FUNKCIONALNI TRENING'
@@ -19,24 +20,20 @@ Drupal.behaviors.exampleModule = {
         icon = '/barbell/web/themes/custom/barbell/img/asics.webp'
       }
 
-
       (function fixContent() {
         removeInitialContent()
         createNewContent()
       })()
 
-
       function removeInitialContent() {
-        console.log(x)
         x.innerHTML = ''
-        console.log(x)
       }
 
       function createNewContent() {
-        var imgContainer = document.createElement('div')
-        var img = document.createElement('img')
-        var titleContainer = document.createElement('div')
-        var title = document.createElement('p')
+        const imgContainer = document.createElement('div')
+        const img = document.createElement('img')
+        const titleContainer = document.createElement('div')
+        const title = document.createElement('p')
 
         x.appendChild(imgContainer)
         x.appendChild(titleContainer)
@@ -46,15 +43,9 @@ Drupal.behaviors.exampleModule = {
         title.className = "rasporedText"
         imgContainer.className = "rasporedImgWrapper"
         
-
         title.innerHTML = text
         img.src = icon
       }
-
-      console.log(x)
     })
-
-
   }
 };
-
