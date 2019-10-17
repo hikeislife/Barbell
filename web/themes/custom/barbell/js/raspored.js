@@ -1,7 +1,7 @@
 Drupal.behaviors.exampleModule = {
   attach: function (context, settings) {
     
-    let td = document.querySelectorAll('td div')
+    (let td = document.querySelectorAll('td div')
     td = [...td]
     let text = ''
     let icon = ''

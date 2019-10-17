@@ -1,0 +1,13 @@
+.page-node-type-galerija #block-barbell-content {
+  width: 100%;
+}
+
+[class*="block-column-"] > .grid ,
+.item-list > [class*="block-column-"] > .grid {
+  margin: 0 -8px !important;
+  padding: 0;
+}
+
+.b-lazy {
+  border: 1px solid black;
+}
