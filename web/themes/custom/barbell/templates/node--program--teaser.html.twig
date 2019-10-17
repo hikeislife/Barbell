@@ -76,8 +76,10 @@
   <a class="program-link"  href="{{ url }}">
     <div class="program-image" style='background-image: url("{{ content.field_thumb_image.0 }}");'></div>
     <div class="program-info-wrapper">
-      <div class="program-title">{{ label }}</div>
-      <div class="program-description">{{ content.body }}</div>
+      <div class="program-info-wrapper-mini">
+        <div class="program-title">{{ label }}</div>
+        <div class="program-description">{{ content.body }}</div>
+      </div>
     </div>
   </a>
 </div>

@@ -2,6 +2,7 @@ base:
   version: 1.x
   js:
     js/main.js: {}
+    js/raspored.js: {}
   dependencies:
     - core/drupal
     - core/jquery
