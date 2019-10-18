@@ -11,8 +11,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 55px;
-  /* justify-content: none; */
-  /* margin: 0 auto; */
+  justify-content: space-between;
+  width: 100vh;
+  margin: 0 auto;
 }
 
 /* HR style */
@@ -31,10 +32,10 @@
   width: 100%;
 }
 
-.view-tim {
+/* .view-tim {
   width: 1000px;
   margin: 0 auto;
-}
+} */
 
 .tim-thumb {
   text-align: center;
@@ -56,6 +57,10 @@
 .tim-description {
   font-size: 28px;
   margin-bottom: 50px;
+}
+
+.path-tim #block-barbell-page-title {
+  margin: 150px auto 120px;
 }
 
 .tim-description::before {
