@@ -35,7 +35,7 @@ Drupal.behaviors.exampleModule = {
         }, 550);
 
         function closeNav() {
-          nav.style.top = "-70vh";
+          nav.style.top = "-100vh";
           xHolder.style.display = "none";
 
           // setTimeout(() => {
@@ -117,18 +117,16 @@ Drupal.behaviors.exampleModule = {
     })();
 
     const removeInlineStyles = (() => {
-        if (document.querySelector('.path-tim')) {
-          const timPage = document.querySelector('.view-content')
-          let imgs = timPage.querySelectorAll('img')
-          imgs = [...imgs]
-          imgs.forEach(x => {
-            x.attributes.removeNamedItem("width");
-            x.attributes.removeNamedItem("height");
-            console.log(x)
-          })
-        }
-      
-      
+      if (document.querySelector(".path-tim")) {
+        const timPage = document.querySelector(".view-content");
+        let imgs = timPage.querySelectorAll("img");
+        imgs = [...imgs];
+        imgs.forEach(x => {
+          x.attributes.removeNamedItem("width");
+          x.attributes.removeNamedItem("height");
+          console.log(x);
+        });
+      }
     })();
   }
 };
