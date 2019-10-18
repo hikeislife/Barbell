@@ -20,19 +20,22 @@ Drupal.behaviors.exampleModule = {
 
       hamburgerHolder.addEventListener("click", function() {
         nav.style.top = "0";
-        xHolder.style.display = "block";
 
         setTimeout(() => {
-          xPara.style.fontSize = "43px";
+          xHolder.style.display = "block";
+        }, 200);
+
+        setTimeout(() => {
+          xPara.style.fontSize = "35px";
           xPara.style.opacity = "1";
-        }, 300);
+        }, 230);
 
         setTimeout(() => {
           xHolder.style.border = "1px solid whitesmoke";
-        }, 900);
+        }, 550);
 
         function closeNav() {
-          nav.style.top = "-60vh";
+          nav.style.top = "-70vh";
           xHolder.style.display = "none";
 
           // setTimeout(() => {
