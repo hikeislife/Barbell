@@ -112,5 +112,20 @@ Drupal.behaviors.exampleModule = {
         }
       });
     })();
+
+    const removeInlineStyles = (() => {
+        if (document.querySelector('.path-tim')) {
+          const timPage = document.querySelector('.view-content')
+          let imgs = timPage.querySelectorAll('img')
+          imgs = [...imgs]
+          imgs.forEach(x => {
+            x.attributes.removeNamedItem("width");
+            x.attributes.removeNamedItem("height");
+            console.log(x)
+          })
+        }
+      
+      
+    })();
   }
 };
