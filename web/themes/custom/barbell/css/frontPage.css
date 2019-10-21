@@ -575,7 +575,7 @@ h2 span {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-height: 570px) {
   header div nav ul {
     margin-top: -40px;
   }
