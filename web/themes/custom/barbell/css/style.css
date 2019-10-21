@@ -70,6 +70,10 @@ body,
   overflow-x: hidden;
 }
 
+.layout-container {
+  position: relative;
+}
+
 /* FOOTER EXTRA SPACE SOLUTION */
 #block-mainnavigation-menu {
   display: none !important;
@@ -387,6 +391,10 @@ header div div .links {
 /* FOOTER */
 footer {
   height: 100px;
+  margin-bottom: -100px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .region-footer {
@@ -542,7 +550,7 @@ blockquote p {
 
 .kontakt-block-content .socials {
   font-size: 42px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .kontakt-block-content .socials span {
