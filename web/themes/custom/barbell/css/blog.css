@@ -35,6 +35,7 @@
 .path-vesti #block-barbell-content {
   margin: 100px 0;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 700px) {
   .path-blog #block-barbell-content,
   .path-vesti #block-barbell-content {
@@ -52,11 +53,11 @@
     margin: 0 2vw;
   }
 }
-
+/* 
 .path-blog .image-style-medium,
 .path-vesti .image-style-medium {
   padding-top: 100% !important;
-}
+} */
 
 .path-blog
   div
@@ -105,7 +106,7 @@
     div
     .view-content {
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 2vw;
+    margin: 0 2vw 7em;
   }
   .path-blog #block-barbell-content,
   .path-vesti #block-barbell-content {
