@@ -179,3 +179,126 @@ tr > th {
     width: 35px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .node__content > div:nth-child(1) > table:nth-child(1) {
+    width: 97% !important;
+  }
+
+  .rasporedAllWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rasporedAllWrapper table {
+    order: 2;
+  }
+
+  .legendaWrapper {
+    /* margin: 0 auto; */
+  }
+
+  .legendaWrapper ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+
+  .legendaWrapper ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .legendaWrapper img {
+    width: 55px;
+    margin: 13px;
+  }
+
+  .legendaWrapper span {
+    font-size: 15px;
+  }
+
+  .legendaWrapper ul li:last-of-type img {
+    width: 44px;
+  }
+
+  .legendaWrapper ul li:last-of-type span {
+    position: relative;
+    left: 12px;
+  }
+
+  .rasporedTitleHolder {
+    display: none;
+  }
+
+  .rasporedImgWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  thead > tr > th:nth-child(1n + 2) {
+    min-width: 50px !important;
+  }
+
+  tr > th {
+    padding: 40% 5px;
+  }
+
+  .rasporedImgWrapper img {
+    width: 35px;
+  }
+
+  .raspored-as img {
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .legendaWrapper ul {
+    padding-left: 10px;
+  }
+
+  .legendaWrapper img {
+    width: 47px;
+    margin: 7px;
+  }
+
+  .legendaWrapper ul li:last-of-type img {
+    width: 38px;
+  }
+
+  .legendaWrapper span {
+    font-size: 14px;
+  }
+
+  .node__content > div:nth-child(1) > table:nth-child(1) {
+    width: 95% !important;
+  }
+
+  thead > tr > th:nth-child(1n + 2) {
+    padding: 0px;
+    min-width: 30px !important;
+  }
+
+  tr > th,
+  thead > tr > th:first-child {
+    width: 40px;
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  thead tr th:nth-child(1) {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .rasporedImgWrapper img {
+    width: 28px;
+  }
+
+  .raspored-as img {
+    width: 19px;
+  }
+}
