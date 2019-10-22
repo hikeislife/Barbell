@@ -26,9 +26,13 @@
   content: url("../img/yellow-stripes-78.png");
   position: absolute;
   z-index: -1;
-  bottom: -16px;
+  top: 4px;
   left: -30px;
-  /* color: red; */
+}
+
+.path-tim .page-title:before {
+  bottom: -16px;
+  left: -34px;
 }
 
 .path-blog #block-barbell-content,

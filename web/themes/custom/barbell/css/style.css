@@ -204,13 +204,16 @@ header div div .links {
   display: inline-grid;
 }
 
-/*  */
 .page-title:before {
   content: url("../img/page-title-bcg.png");
   position: relative;
   left: 100px;
   z-index: -1;
   bottom: -12px;
+}
+
+.path-node .page-title::before {
+  content: none;
 }
 
 .page-title {
@@ -220,12 +223,7 @@ header div div .links {
   font-size: 60px;
   position: relative;
   font-family: "Henry";
-  left: -30px;
 }
-
-/* .page-title span {
-    z-index: 50;
-} */
 
 .language-switcher-language-url {
   display: flex;
@@ -284,7 +282,7 @@ header div div .links {
   .kontakt-block-content h3,
   #after_content div div h2 {
     /* margin: 0; */
-    font-size: 45px;
+    font-size: 36px;
   }
 }
 
@@ -302,16 +300,27 @@ header div div .links {
   z-index: -1;
 }
 
+.page-title .field--name-title:before {
+  left: -32px;
+  top: 4px;
+}
+
+@media only screen and (max-width: 992px) {
+  .page-title .field--name-title:before,
+  .kontakt-block-content h3:before,
+  #after_content div div h2:before {
+    content: url("../img/page-title-bcg.png");
+    top: 4px;
+    left: -25px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .page-title .field--name-title:before,
   .kontakt-block-content h3:before,
   #after_content div div h2:before {
     content: url("../img/page-title-bcg.png");
   }
-}
-.page-title .field--name-title:before {
-  left: -32px;
-  bottom: -15px;
 }
 
 .kontakt-block-content h3 {
@@ -327,7 +336,7 @@ header div div .links {
   .page-title .field--name-title:before,
   .kontakt-block-content h3:before {
     left: -25px;
-    bottom: -15px;
+    top: -4px;
   }
 }
 
@@ -557,7 +566,7 @@ blockquote p {
   margin: 0 5px;
 }
 
-/* CONTACT - MAP */
+/* CONTACT - MAP, SOME TITLES */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .page-title,
   .kontakt-block-content h3,
@@ -572,5 +581,55 @@ blockquote p {
 
   .kontakt-block-content .address {
     font-size: 28px;
+  }
+
+  /* vesti naslov */
+  .path-vesti .page-title:before,
+  .path-tim .page-title:before,
+  .path-programi .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    top: 4px !important;
+    left: -26px !important;
+  }
+
+  /* blog naslov */
+  .path-blog .page-title:before,
+  .path-tim .page-title:before,
+  .path-programi .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    top: 5px !important;
+    left: -21px !important;
+  }
+
+  /* tim naslov */
+  /* .path-tim .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    bottom: -10px !important;
+    left: -21px !important;
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  /* vesti naslov */
+  .path-vesti .page-title:before,
+  .path-programi .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    top: 0px !important;
+    left: -26px !important;
+  }
+
+  /* blog naslov */
+  .path-blog .page-title:before,
+  .path-programi .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    top: 0px !important;
+    left: -22px !important;
+  }
+
+  /* tim naslov */
+  .path-tim .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    bottom: -14px !important;
+    left: -28px !important;
   }
 }

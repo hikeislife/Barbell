@@ -42,13 +42,13 @@ h2 span:before {
   position: absolute;
   left: -29px;
   z-index: -1;
-  bottom: -16px;
+  top: 2px;
 }
 
 @media only screen and (max-width: 768px) {
   h2 span:before {
     content: url("../img/page-title-bcg.png");
-    bottom: -15px;
+    top: 0;
     left: -25px;
   }
 }
@@ -144,7 +144,7 @@ h2 span {
 }
 
 #after_content div div h2:before {
-  bottom: -15px;
+  top: 3px;
   left: -22px;
 }
 
