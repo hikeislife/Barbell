@@ -62,11 +62,22 @@ Drupal.behaviors.exampleModule = {
 
         xHolder.addEventListener("click", closeNav);
       });
+    })();
 
-      // TEMPORARY
-      // xPara.style.opacity = "0";
-      // xHolder.style.opacity = "0";
-      // TEMPORARY
+    const removeInlineStyles = (() => {
+      //align-right
+      //if (document.querySelector(".path-tim")) {
+      const regionOfRelevantImages = document.querySelector("main");
+      let imgs = regionOfRelevantImages.querySelectorAll("img");
+      imgs = [...imgs];
+      imgs.forEach(x => {
+        if (x.attributes.length - 1) {
+          x.attributes.removeNamedItem("width");
+          x.attributes.removeNamedItem("height");
+          if (x.classList.contains('align-right')) x.classList.remove('align-right')
+        }
+      });
+      //}
     })();
 
     let raspored = (function() {
@@ -107,6 +118,7 @@ Drupal.behaviors.exampleModule = {
           titleContainer.appendChild(title);
           imgContainer.appendChild(img);
 
+          titleContainer.className = "rasporedTitleHolder";
           title.className = "rasporedText";
           imgContainer.className = "rasporedImgWrapper";
 
@@ -116,18 +128,46 @@ Drupal.behaviors.exampleModule = {
       });
     })();
 
-    const removeInlineStyles = (() => {
-      const regionOfRelevantImages = document.querySelector("main");
-      let imgs = regionOfRelevantImages.querySelectorAll("img");
-        imgs = [...imgs];
-        imgs.forEach(x => {
-          if (x.attributes.length - 1) {
-            x.attributes.removeNamedItem("width");
-            x.attributes.removeNamedItem("height");
-            if (x.classList.contains('align-right')) x.classList.remove('align-right')
-          }
-        });
-      //}
-    })();
+    function rasporedLegendaIskraceniDani() {
+      // skraceni dani
+      let days = document.querySelectorAll("thead th");
+      days = [...days];
+      days.shift();
+      days.forEach(it => (it.innerHTML = it.innerHTML.substring(0, 3)));
+
+      // raspored legenda
+      let vrstaTreninga = [
+        "FUNKCIONALNI TRENING",
+        "SNAGA I ESTETIKA",
+        "ASICS ŠKOLA TRČANJA"
+      ];
+      let ikonaTreninga = [
+        "/barbell/web/themes/custom/barbell/img/fe.webp",
+        "/barbell/web/themes/custom/barbell/img/se.webp",
+        "/barbell/web/themes/custom/barbell/img/asics.webp"
+      ];
+      let rasporedTable = document.querySelector("table");
+      var rasporedTableParent = rasporedTable.parentElement;
+      let legendaWrapper = document.createElement("div");
+      legendaWrapper.className = "legendaWrapper";
+      let legendaUl = document.createElement("ul");
+      for (let i = 0; i < 3; i++) {
+        let legendaLi = document.createElement("li");
+        let legendaImg = document.createElement("img");
+        let legendaSpan = document.createElement("span");
+        legendaImg.src = ikonaTreninga[i];
+        legendaSpan.innerHTML = vrstaTreninga[i];
+        legendaLi.appendChild(legendaImg);
+        legendaLi.appendChild(legendaSpan);
+        legendaUl.appendChild(legendaLi);
+        legendaWrapper.appendChild(legendaUl);
+      }
+      rasporedTableParent.appendChild(legendaWrapper);
+      rasporedTableParent.classList.add("rasporedAllWrapper");
+    }
+
+    if (window.innerWidth <= 768) {
+      rasporedLegendaIskraceniDani();
+    }
   }
 };
