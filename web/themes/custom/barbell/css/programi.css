@@ -1,14 +1,176 @@
-:root {
-    --each: 600px; /* širina celog jednog program boxa */
-    --oneHalf: 300px; /* širina slike / texta unutar jednog boxa */
-    --text: 350px;
-  }
+/* TODO: remove this before publishing */
+.path-programi .view-content .views-row .program-thumb .program-link .program-image {
+  background: dimgray;
+}
+
+/* Basic layout of one box */
+
+.path-programi .view-content .views-row .program-thumb .program-link {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 100%;
+  margin-bottom: 3em;
+}
+
+/* OKRETANJE PARNIH PROGRAMA NA DRUGU STRANU */
+.path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-image {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  /*clip-path: polygon(0 0, 100% 0%, 100% 100%, 60% 100%);*/
+}
+
+/* OUTER INFO WRAPPER */
+
+.path-programi .views-row .program-info-wrapper {
+  width: 160%;
+  z-index: 5;
+  background: var(--yellow);
+  padding: 3px;
+}
+
+.path-programi .views-row:nth-child(odd) .program-info-wrapper {
+  position: relative;
+  left: -60%;
+  clip-path: polygon(37% 0, 100% 0, 100% 100%, 0 100%);
+  text-align: right;
+}
+
+.path-programi .views-row:nth-child(even) .program-info-wrapper {
+  clip-path: polygon(0 0, 63% 0, 100% 102%, 0 100%);
+}
+
+.path-programi .views-row:hover .program-info-wrapper,
+.path-programi .views-row:hover .program-info-wrapper-mini {
+  background: black;
+}
+
+/* INNER INFO WRAPPER */
+
+.path-programi .views-row .program-info-wrapper-mini {
+  background: whitesmoke;
+  padding: 1em .7em;
+}
+.path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
+  clip-path: polygon(37% 0, 100% 0, 100% 100%, 1.5% 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* height: 97.5%; */
+}
+
+.path-programi .views-row:nth-child(even) .program-info-wrapper-mini {
+  clip-path: polygon(0 0, 63% 0, 98.5% 101%, 0 100%);
+  /* height: 98.7%; */
+}
+
+.path-programi .program-link {
+  color: black;
+  text-decoration: none;
+}
 
 .path-programi .program-title span {
   font-family: "Henry";
-  font-size: 38px;
+  font-size: 24px;
   text-transform: uppercase;
+  display: inline-block;
+  width: 70%;
 }
+
+.path-programi .program-description div {
+  width: 80%;
+}
+
+.path-programi .views-row:nth-child(odd) .program-description div:before {
+  margin: 1em 1em 1em auto;
+}
+
+.path-programi .views-row:nth-child(even) .program-description div:before {
+  margin: 1em auto 1em 1em;
+}
+
+.path-programi .program-description {
+  font-size: 1.2rem;
+}
+
+.path-programi .views-row:nth-child(odd) .program-description {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+@media only screen and (min-width: 25em) {
+  .path-programi .views-row {
+    width: 25em;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 38em) { /*608*/
+  .path-programi .views-row {
+    width: 37.5em;
+  }
+
+  .path-programi .program-title span {
+    font-size: 2.375em;
+  }
+
+  .path-programi .program-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 52em) {/*832*/
+  .path-programi .views-row {
+    width: 25em;
+    margin: 0 auto;
+  }
+
+  .path-programi .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-bottom: 190px;
+  }
+
+  .path-programi .views-row {
+    height: 13em;
+    margin-bottom: 3em;
+  }
+
+  .path-programi .program-thumb, .path-programi .program-thumb .program-info-wrapper-mini {
+    height: 100%;
+  }
+
+  .path-programi .program-title span,
+  .path-programi .program-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 76em) { /*1216*/
+  .path-programi .views-row {
+    width: 37.5em;
+  }
+
+  .path-programi .program-title span {
+    font-size: 2.375em;
+  }
+
+  .path-programi .program-description {
+    font-size: 1.6rem;
+  }
+
+  .path-programi .views-row {
+    height: 20em;
+    margin-bottom: 5em;
+  }
+}
+
+/*:root {
+    --each: 600px; 
+    --oneHalf: 300px;
+    --text: 350px;
+  }
 
 @media only screen and (max-width: 1300px) {
   .path-programi .program-title span {
@@ -22,24 +184,16 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   .path-programi .program-title span {
     font-size: 18px;
   }
 }
 
-  .path-programi .program-link {
-    color: black;
-    text-decoration: none;
-  }
+  
 
   /* spoljni grid koji drži po dva programa u jednom redu */
-.path-programi .view-content {
-  display: grid;
-  grid-template-columns: var(--each) var(--each);
-  justify-content: space-around;
-  margin-bottom: 190px;
-}
+/*
 
 @media only screen and (max-width: 1300px) {
   .path-programi .view-content {
@@ -75,39 +229,32 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   .path-programi .view-content .views-row {
     height: 234px;
-    width: 400px;
     margin: 0 auto 50px !important;
+    width: calc(100% - 20px);
   }
 }
 
 /* removes hover from other pages */
-.path-programi .view-content .views-row:hover {
+/*.path-programi .view-content .views-row:hover {
   border: none;
 }
 
-.path-programi .view-content .views-row:hover .program-info-wrapper,
-.path-programi .view-content .views-row:hover .program-info-wrapper-mini {
-  background: black;
-}
+
 
 
   /* div pojedinog programa */
-  .path-programi .view-content .views-row .program-thumb {
+  /*.path-programi .view-content .views-row .program-thumb {
       margin: 0;
       height: 100%;
   }
 
-  .path-programi .view-content .views-row .program-thumb .program-link {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      height: 100%;
-  }
+
 
   /* LEVA SLIKA */ 
-  .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image {
+ /* .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image {
     clip-path: polygon(0 0, 100% 0%, 40% 100%, 0% 100%);
   }
   .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image img {
@@ -115,7 +262,7 @@
   }
 
 /* LEVI TEXT */
-.path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-title {
+/*.path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-title {
   padding: 27px;
   text-align: right;
 }
@@ -151,7 +298,6 @@
   }
 }
 
-
 .path-programi .view-content .views-row .program-thumb .program-link .program-description div {
   font-size: 30px;
 }
@@ -169,7 +315,7 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   .path-programi .view-content .views-row .program-thumb .program-link .program-description div {
     font-size: 16px;
   }
@@ -178,20 +324,33 @@
 .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description {
   text-align: right;
 }
-.path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description div {
-  margin: -18px 27px;
+
+.path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description {
+  display: grid;
+  width: 80%;
+  justify-content: right;
 }
 
-/* TODO: remove this before publishing */
-.path-programi .view-content .views-row .program-thumb .program-link .program-image {
-  background: dimgray;
-}
-
-  /* OKRETANJE PARNIH PROGRAMA NA DRUGU STRANU */
-  .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-image {
-      grid-column: 2/3;
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 60% 100%);
+@media only screen and (max-width: 700px) {
+  .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description {
+    width: 93%;
   }
+  .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
+    top: 0;
+    left: 0;
+    clip-path: polygon(37% 0, 100% 0, 100% 100%, .5% 100%);
+    display: grid;
+    justify-items: right;
+  }
+}
+.path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description div:before {
+  position: relative;
+  right: 26px;
+}
+
+
+
+
 
   .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-info-wrapper {
       grid-column: 1/2;
@@ -202,25 +361,11 @@
   margin: 30px 0;
 }
 
-@media only screen and (max-width: 650px) {
-  .path-programi .view-content .views-row {
-    width: calc(100% - 20px);
-    margin: 40px 10px !important;
-  }
+div.views-row > div > a > div:nth-child(2) > div > div:nth-child(2) > div {
+ margin-right: 27px;
 }
 
-.path-programi .views-row:nth-child(odd) .program-info-wrapper {
-  position: relative;
-  left: -60%;
-  clip-path: polygon(37% 0, 100% 0, 100% 100%, 0 100%);
-}
 
-.path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
-  background: whitesmoke;
-  margin: 4px;
-  clip-path: polygon(37% 0, 100% 0, 100% 100%, .5% 100%);
-  height: 97.5%;
-}
 
 @media only screen and (max-width: 1300px) {
   .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
@@ -231,15 +376,15 @@
   }
 }
 
-.path-programi .views-row:nth-child(even) .program-info-wrapper {
-  clip-path: polygon(0 0, 63% 0, 100% 100%, 0 100%);
+@media only screen and (max-width: 900px) {
+  .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
+    top: 0;
+    left: 0;
+    clip-path: polygon(37% 0, 100% 0, 100% 100%, .5% 100%);
+  }
 }
 
-.path-programi .views-row:nth-child(even) .program-info-wrapper-mini {
-  clip-path: polygon(.8% 1.2%, 62.5% 1.2%, 98.5% 100%, .8% 100%);
-  background: whitesmoke;
-  height: 98.7%;
-}
+
 
 .path-programi .program-info-wrapper {
   background: var(--yellow);
@@ -250,6 +395,39 @@
   margin: 17px 0 19px auto;
 }
 
+@media only screen and (max-width: 700px) {
+  .path-programi .views-row:nth-child(odd) .program-description div::before {
+    margin: -68px 0 19px auto;
+  }
+}
+
 .path-programi .views-row:nth-child(even) .program-description div::before {
   margin: 4px auto 19px 0;
+}
+@media only screen and (max-width: 700px) {
+  .path-programi .views-row:nth-child(even) .program-description div::before {
+    margin: 4px 10px 19px 16px;
+  }
+
+  div.views-row:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    margin-left: -12px;
+  }
+
+  div.views-row:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    width: 60%;
+  }
+
+  div.views-row > div > a > div:nth-child(2) > div > div:nth-child(2) > div {
+    margin-right: 17px;
+  }
+  
+  .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+  }
+  .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-description div:before {
+    position: relative;
+    right: 16px;
+  }
 }

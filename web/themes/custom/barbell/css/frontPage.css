@@ -176,7 +176,7 @@ h2 span {
   grid-column: 1/2;
 }
 
-.view-content .views-row:hover {
+.path-frontpage .view-content .views-row:hover {
   border: 2px solid black;
   background: black;
 }
