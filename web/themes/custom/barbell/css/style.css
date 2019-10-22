@@ -622,7 +622,7 @@ blockquote p {
   .path-blog .page-title:before,
   .path-programi .page-title:before {
     content: url(../img/page-title-bcg.png) !important;
-    top: 0px !important;
+    top: -3px !important;
     left: -22px !important;
   }
 
