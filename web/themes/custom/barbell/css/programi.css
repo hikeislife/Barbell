@@ -16,11 +16,9 @@
 .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-image {
   grid-column: 2/3;
   grid-row: 1/2;
-  /*clip-path: polygon(0 0, 100% 0%, 100% 100%, 60% 100%);*/
 }
 
 /* OUTER INFO WRAPPER */
-
 .path-programi .views-row .program-info-wrapper {
   width: 160%;
   z-index: 5;
@@ -45,22 +43,20 @@
 }
 
 /* INNER INFO WRAPPER */
-
 .path-programi .views-row .program-info-wrapper-mini {
   background: whitesmoke;
   padding: 1em .7em;
 }
+
 .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
   clip-path: polygon(37% 0, 100% 0, 100% 100%, 1.5% 100%);
   display: flex;
   flex-direction: column;
-  align-items: end;
-  /* height: 97.5%; */
+  align-items: flex-end;
 }
 
 .path-programi .views-row:nth-child(even) .program-info-wrapper-mini {
   clip-path: polygon(0 0, 63% 0, 98.5% 101%, 0 100%);
-  /* height: 98.7%; */
 }
 
 .path-programi .program-link {
@@ -77,7 +73,7 @@
 }
 
 .path-programi .program-description div {
-  width: 80%;
+  align-self: end;
 }
 
 .path-programi .views-row:nth-child(odd) .program-description div:before {
@@ -95,9 +91,11 @@
 .path-programi .views-row:nth-child(odd) .program-description {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-self: flex-end;
+  width: 80%;
 }
 
+/* MEDIA QUERIES */
 @media only screen and (min-width: 25em) {
   .path-programi .views-row {
     width: 25em;
@@ -166,11 +164,7 @@
   }
 }
 
-/*:root {
-    --each: 600px; 
-    --oneHalf: 300px;
-    --text: 350px;
-  }
+/*
 
 @media only screen and (max-width: 1300px) {
   .path-programi .program-title span {
@@ -189,11 +183,6 @@
     font-size: 18px;
   }
 }
-
-  
-
-  /* spoljni grid koji drži po dva programa u jednom redu */
-/*
 
 @media only screen and (max-width: 1300px) {
   .path-programi .view-content {
@@ -242,16 +231,11 @@
   border: none;
 }
 
-
-
-
   /* div pojedinog programa */
   /*.path-programi .view-content .views-row .program-thumb {
       margin: 0;
       height: 100%;
   }
-
-
 
   /* LEVA SLIKA */ 
  /* .path-programi .view-content .views-row:nth-child(odd) .program-thumb .program-link .program-image {
@@ -348,10 +332,6 @@
   right: 26px;
 }
 
-
-
-
-
   .path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-info-wrapper {
       grid-column: 1/2;
       grid-row: 1/2;    
@@ -364,8 +344,6 @@
 div.views-row > div > a > div:nth-child(2) > div > div:nth-child(2) > div {
  margin-right: 27px;
 }
-
-
 
 @media only screen and (max-width: 1300px) {
   .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
@@ -383,8 +361,6 @@ div.views-row > div > a > div:nth-child(2) > div > div:nth-child(2) > div {
     clip-path: polygon(37% 0, 100% 0, 100% 100%, .5% 100%);
   }
 }
-
-
 
 .path-programi .program-info-wrapper {
   background: var(--yellow);
