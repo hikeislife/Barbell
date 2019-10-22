@@ -74,11 +74,6 @@ body,
   position: relative;
 }
 
-/* FOOTER EXTRA SPACE SOLUTION */
-#block-mainnavigation-menu {
-  display: none !important;
-}
-
 @font-face {
   font-family: "Brandon Grotesque Medium";
   font-style: normal;
@@ -396,6 +391,12 @@ header div div .links {
   text-decoration: none;
   font-family: "Brandon Grotesque Medium";
 }
+
+/* FOOTER EXTRA SPACE SOLUTION */
+#block-mainnavigation-menu {
+  display: none !important;
+}
+
 
 /* FOOTER */
 footer {
