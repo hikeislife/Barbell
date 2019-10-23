@@ -1,19 +1,21 @@
-.path-tim
+/* .path-tim
   div
   div
   main
   div
   div
   #block-barbell-content
-  div
-  .view-tim
-  .view-content {
+  div */
+.view-tim .view-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 55px;
-  justify-content: space-between;
-  width: 100vh;
+  width: 70vw;
   margin: 0 auto;
+}
+
+.view-tim {
+  margin-bottom: 130px;
 }
 
 /* HR style */
@@ -96,4 +98,73 @@
 
 .tim-image {
   margin: 0 0 -6px 0;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1325px) {
+  .view-tim .view-content {
+    width: 80vw;
+  }
+
+  .tim-title {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .view-tim .view-content {
+    width: 90vw;
+    grid-gap: 30px;
+  }
+
+  .tim-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .view-tim .view-content {
+    width: 90vw;
+    grid-gap: 30px;
+  }
+
+  .tim-title {
+    font-size: 22px;
+  }
+
+  .tim-description {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  .view-tim .view-content {
+    width: 90vw;
+    grid-gap: 30px;
+  }
+
+  .tim-title {
+    font-size: 18px;
+  }
+
+  .tim-description {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .view-tim .view-content {
+    width: 98vw;
+    grid-gap: 5px;
+  }
+
+  .tim-title {
+    font-size: 14px;
+  }
+
+  .tim-description {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
 }
