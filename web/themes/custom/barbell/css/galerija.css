@@ -19,9 +19,9 @@
   background: lightblue;
 }
 
-.blazy li,
-.blazy div,
-.blazy a {
+.page-node-type-galerija .blazy li,
+.page-node-type-galerija .blazy div,
+.page-node-type-galerija .blazy a {
   display: inline-block !important;
   width: 100% !important;
 }
@@ -30,6 +30,6 @@
   cursor: pointer;
 }
 
-.slick-lightbox-close:before {
+/* .slick-lightbox-close:before {
   font-size: 50px;
 } */

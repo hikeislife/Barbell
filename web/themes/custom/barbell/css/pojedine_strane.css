@@ -13,8 +13,6 @@
   height: auto;
 }
 
-
-
 @media only screen and (max-width: 360px) {
   .field--name-field-link-button div,
   .page-node-type-article #block-zakazitetrening p {
@@ -23,18 +21,15 @@
     text-align: center;
     padding: 1.2em 1em;
   }
+
   .field--name-field-link-button {
     padding: 0;
   }
+  
   .field--name-field-link-button div {
     padding: 0;
     margin: 1em 2em;
   }
-
-  /* .page-node-type-tim p {
-    margin: 0 2em 0 1em;
-    width: calc(100% - 4em);
-  } */
 }
 
 @media only screen and (min-width: 992px) {
