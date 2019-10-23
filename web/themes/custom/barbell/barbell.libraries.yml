@@ -20,3 +20,4 @@ global-styling:
       css/programi.css: {}
       css/raspored.css: {}
       css/galerija.css: {}
+      css/pojedine_strane.css: {}

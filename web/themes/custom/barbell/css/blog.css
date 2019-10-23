@@ -229,23 +229,3 @@
     font-size: 21px;
   }
 }
-
-
-.page-node-type-article article img {
-  width: 100%;
-  height: auto;
-  margin: 1em 0;
-}
-
-.page-node-type-article #block-zakazitetrening {
-  padding-top: 5em;
-}
-
-@media only screen and (min-width: 850px) {
-  .page-node-type-article article img {
-    margin: .5em 0 0 1em;
-    width: 50%;
-    float: right;
-
-  }
-}

@@ -74,7 +74,7 @@ Drupal.behaviors.exampleModule = {
         if (x.attributes.length - 1) {
           x.attributes.removeNamedItem("width");
           x.attributes.removeNamedItem("height");
-          if (x.classList.contains('align-right')) x.classList.remove('align-right')
+          //if (x.classList.contains('align-right')) x.classList.remove('align-right')
         }
       });
       //}
