@@ -40,9 +40,18 @@
   clip-path: polygon(0 0, 63% 0, 100% 102%, 0 100%);
 }
 
-.path-programi .views-row:hover .program-info-wrapper,
-.path-programi .views-row:hover .program-info-wrapper-mini {
-  background: black;
+.path-programi .program-link:hover .program-info-wrapper,
+.path-programi .program-link:hover .program-info-wrapper-mini {
+  background: var(--black);
+}
+
+.path-programi .views-row:hover .program-description,
+.path-programi .views-row:hover .program-title {
+  color: black;
+}
+.path-programi .program-link:hover .program-description,
+.path-programi .program-link:hover .program-title {
+  color: whitesmoke;
 }
 
 /* INNER INFO WRAPPER */
@@ -259,10 +268,6 @@
   }
 }
 
-/* removes hover from other pages */
-/*.path-programi .view-content .views-row:hover {
-  border: none;
-}
 
   /* div pojedinog programa */
   /*.path-programi .view-content .views-row .program-thumb {
