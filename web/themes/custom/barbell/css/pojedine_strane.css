@@ -14,9 +14,12 @@
 }
 
 @media only screen and (max-width: 360px) {
-  .field--name-field-link-button div,
   .page-node-type-article #block-zakazitetrening p {
     margin: 0 2em 2em;
+  }
+  .page-node-type-program .field--name-field-link-button div,
+  .page-node-type-tim .field--name-field-link-button div,
+  .page-node-type-article #block-zakazitetrening p {
     font-size: 16px;
     text-align: center;
     padding: 1.2em 1em;
@@ -26,10 +29,10 @@
     padding: 0;
   }
   
-  .field--name-field-link-button div {
+  /* .page-node-type-tim .field--name-field-link-button div {
     padding: 0;
     margin: 1em 2em;
-  }
+  } */
 }
 
 @media only screen and (min-width: 992px) {
