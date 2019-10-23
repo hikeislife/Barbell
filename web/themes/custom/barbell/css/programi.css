@@ -40,8 +40,8 @@
   clip-path: polygon(0 0, 63% 0, 100% 102%, 0 100%);
 }
 
-.path-programi .views-row:hover .program-info-wrapper,
-.path-programi .views-row:hover .program-info-wrapper-mini {
+.path-programi a:hover .program-info-wrapper,
+.path-programi a:hover .program-info-wrapper-mini {
   background: black;
 }
 

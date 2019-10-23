@@ -44,38 +44,49 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
-  {% if page.hero %}
-    <div id="hero-section">
-      {{ page.hero }}
+    <header role="banner">
+        {{ page.header }}
+    </header>
+    {% if page.hero %}
+        <div id="hero-section">
+            {{ page.hero }}
+        </div>
+    {% endif %}
+
+    <main role="main">
+        <a id="main-content" tabindex="-1"></a>
+        {# link is in html.html.twig #}
+
+        <div class="layout-content">
+            {{ page.content }}
+        </div>
+        {# /.layout-content #}
+    </main>
+    {% if page.after_content %}
+        <div id="after_content">
+            {{ page.after_content }}
+        </div>
+    {% endif %}
+
+    {% if page.pre_footer_left or page.pre_footer_right  %}
+        <div id="pre_footer">
+            <div class="pre_footer_left">{{ page.pre_footer_left }}</div>
+            <div class="pre_footer_right">{{ page.pre_footer_right }}</div>
+        </div>
+    {% endif %}
+    <!-- SCROLL BACK TO TOP BUTTON -->
+    <div class="scroll-top-button text-center align-middle">
+        <p>
+            <i class="fa fa-angle-up"></i>
+        </p>
+        <p>back to top</p>
     </div>
-  {% endif %}
+    <!-- / SCROLL BACK TO TOP BUTTON ends -->
+    {% if page.footer %}
+        <footer role="contentinfo">
+            {{ page.footer }}
+        </footer>
+    {% endif %}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-  </main>
-  {% if page.after_content %}
-    <div id="after_content">
-      {{ page.after_content }}
-    </div>
-  {% endif %}
-
-  {% if page.pre_footer_left or page.pre_footer_right  %}
-    <div id="pre_footer">
-      <div class="pre_footer_left">{{ page.pre_footer_left }}</div>
-      <div class="pre_footer_right">{{ page.pre_footer_right }}</div>
-    </div>
-  {% endif %}
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
-</div>{# /.layout-container #}
+</div>
+{# /.layout-container #}

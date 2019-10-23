@@ -6,9 +6,9 @@
   border-color: transparent;
 }
 
-tbody tr {
+/* tbody tr {
   height: 170px !important;
-}
+} */
 
 td,
 th {
@@ -167,7 +167,7 @@ tr > th {
     font-size: 10px !important;
     margin: 0 !important;
     padding: 0 0px !important;
-    line-height: 15px;
+    line-height: 13px;
   }
 
   .rasporedImgWrapper img {
@@ -223,6 +223,10 @@ tr > th {
     left: 12px;
   }
 
+  tbody tr {
+    height: 0 !important;
+  }
+
   .rasporedTitleHolder {
     display: none;
   }
@@ -236,6 +240,11 @@ tr > th {
 
   thead > tr > th:nth-child(1n + 2) {
     min-width: 50px !important;
+  }
+
+  td div {
+    text-align: center;
+    padding: 2px;
   }
 
   tr > th {
