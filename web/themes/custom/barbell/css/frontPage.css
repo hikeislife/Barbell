@@ -179,8 +179,8 @@ h2 span {
 .path-frontpage .view-content .views-row:hover,
 .path-blog .view-content .views-row:hover,
 .path-vesti .view-content .views-row:hover {
-  border: 2px solid black;
-  background: black;
+  border: 2px solid var(--black);
+  background: var(--black);
 }
 
 .view-content .views-row:hover .program-link {

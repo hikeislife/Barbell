@@ -28,16 +28,12 @@
 
 .view-tim .view-content div div a:hover div {
   color: whitesmoke;
+  background: var(--black);
 }
 
 .view-tim .view-content div div a .tim-image div img {
   width: 100%;
 }
-
-/* .view-tim {
-  width: 1000px;
-  margin: 0 auto;
-} */
 
 .tim-thumb {
   text-align: center;

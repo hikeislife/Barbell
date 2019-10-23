@@ -1,0 +1,74 @@
+.page-node-type-article article img {
+  width: 100%;
+  height: auto;
+  margin: 1em 0;
+}
+
+.page-node-type-article #block-zakazitetrening {
+  padding-top: 5em;
+}
+
+.align-left {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 360px) {
+  .page-node-type-article #block-zakazitetrening p {
+    margin: 0 2em 2em;
+  }
+  .page-node-type-program .field--name-field-link-button div,
+  .page-node-type-tim .field--name-field-link-button div,
+  .page-node-type-article #block-zakazitetrening p {
+    font-size: 16px;
+    text-align: center;
+    padding: 1.2em 1em;
+  }
+
+  .field--name-field-link-button {
+    padding: 0;
+  }
+  
+  /* .page-node-type-tim .field--name-field-link-button div {
+    padding: 0;
+    margin: 1em 2em;
+  } */
+}
+
+@media only screen and (min-width: 992px) {
+  .page-node-type-article article img {
+    margin: .5em 0 0 1em;
+    width: 50%;
+    float: right;
+  }
+
+  .align-left {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #block-barbell-content p {
+    font-size: 40px;
+    margin: -1em 220px 2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .page-node-type-article article img {
+    width: 45%;
+    margin-left: 2.5em;
+  }
+
+  .align-left {
+    width: 45%;
+    margin-right: 1em;
+  }
+
+  #block-barbell-content p {
+    width: 1500px;
+    margin: -1em auto 2em;
+  }
+}
+
