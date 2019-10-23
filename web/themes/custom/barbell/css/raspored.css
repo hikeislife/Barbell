@@ -194,10 +194,6 @@ tr > th {
     order: 2;
   }
 
-  .legendaWrapper {
-    /* margin: 0 auto; */
-  }
-
   .legendaWrapper ul {
     list-style: none;
     padding-left: 10px;

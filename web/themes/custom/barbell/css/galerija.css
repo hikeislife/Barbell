@@ -1,13 +1,35 @@
 .page-node-type-galerija #block-barbell-content {
   width: 100%;
+  margin-bottom: 150px;
 }
 
-[class*="block-column-"] > .grid ,
+[class*="block-column-"],
+.item-list > [class*="block-column-"] {
+  column-gap: 0;
+}
+
+[class*="block-column-"] > .grid,
 .item-list > [class*="block-column-"] > .grid {
-  margin: 0 -8px !important;
-  padding: 0;
+  margin-bottom: -8px !important;
 }
 
-.b-lazy {
-  border: 1px solid black;
+.blazy img {
+  width: 100%;
+  height: auto;
+  background: lightblue;
+}
+
+.blazy li,
+.blazy div,
+.blazy a {
+  display: inline-block !important;
+  width: 100% !important;
+}
+
+.blazy a:hover {
+  cursor: pointer;
+}
+
+.slick-lightbox-close:before {
+  font-size: 50px;
 }
