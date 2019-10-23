@@ -71,11 +71,11 @@ Drupal.behaviors.exampleModule = {
       let imgs = regionOfRelevantImages.querySelectorAll("img");
       imgs = [...imgs];
       imgs.forEach(x => {
-        x.attributes.removeNamedItem("width");
-        x.attributes.removeNamedItem("height");
-        if (x.classList.contains("align-right"))
-          x.classList.remove("align-right");
-        console.log(x);
+        if (x.attributes.length - 1) {
+          x.attributes.removeNamedItem("width");
+          x.attributes.removeNamedItem("height");
+          if (x.classList.contains('align-right')) x.classList.remove('align-right')
+        }
       });
       //}
     })();

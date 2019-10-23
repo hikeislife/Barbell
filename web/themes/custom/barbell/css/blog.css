@@ -90,7 +90,7 @@
 }
 @media only screen and (max-width: 1100px) {
   .path-blog
-    div
+    /*div*/
     .layout-container
     main
     .layout-content
@@ -99,16 +99,7 @@
     div
     div
     .view-content,
-  .path-vesti
-    div
-    .layout-container
-    main
-    .layout-content
-    div
-    #block-barbell-content
-    div
-    div
-    .view-content {
+  .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 2vw 7em;
   }
