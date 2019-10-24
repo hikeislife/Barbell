@@ -196,5 +196,17 @@ Drupal.behaviors.exampleModule = {
             .scrollIntoView({ behavior: "smooth" });
         });
     });
+    // /SCROLL TO TOP ENDS
+
+    let fixedFooter = (function() {
+      let layoutContainer = document.querySelector(".layout-container");
+      let footer = document.querySelector("footer");
+
+      if (layoutContainer.offsetHeight < window.innerHeight) {
+        layoutContainer.style.height = window.innerHeight + "px";
+        footer.style.position = "fixed";
+        footer.style.bottom = "0";
+      }
+    })();
   }
 };
