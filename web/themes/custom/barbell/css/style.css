@@ -343,6 +343,18 @@ header div div .links {
   text-align: justify;
 }
 
+@media only screen and (max-width: 992px) {
+  .field--name-body p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .field--name-body p {
+    font-size: 22px;
+  }
+}
+
 /* bold prices txt */
 .field--name-body p strong {
   font-family: "Brandon Grotesque Bold";

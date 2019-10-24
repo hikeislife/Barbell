@@ -43,7 +43,7 @@
 @media only screen and (min-width: 320px) and (max-width: 700px) {
   .path-blog #block-barbell-content,
   .path-vesti #block-barbell-content {
-    margin: 20px;
+    margin: 7px;
   }
 }
 
@@ -138,6 +138,11 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 0 2px;
   }
+
+  .path-blog #block-barbell-content,
+  .path-vesti #block-barbell-content {
+    margin-bottom: 100px !important;
+  }
 }
 
 /* @media only screen and (min-width: 320px) and (max-width: 700px) {
@@ -193,7 +198,12 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .path-blog .article-thumb .article-info-wrapper .article-title span,
   .path-vesti .article-thumb .article-info-wrapper .article-title span {
-    font-size: 23px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .article-info-wrapper .article-date div time {
+    font-size: 16px;
   }
 }
 
@@ -203,6 +213,8 @@
 
 .article-image div img {
   width: 100%;
+  display: inline-block;
+  height: auto;
 }
 
 .article-info-wrapper {

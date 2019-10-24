@@ -58,7 +58,18 @@
 .path-programi .views-row .program-info-wrapper-mini {
   background: whitesmoke;
   padding: 0.3em;
+  
   font-family: "Brandon Grotesque Medium";
+}
+
+@media only screen and (min-width: 430px) and (max-width: 624px) {
+  .path-programi .views-row .program-info-wrapper-mini {
+    height: 100%;
+  }
+
+  .path-programi .view-content .program-thumb {
+    height: 230px;
+  }
 }
 
 .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
