@@ -74,16 +74,19 @@
             <div class="pre_footer_right">{{ page.pre_footer_right }}</div>
         </div>
     {% endif %}
-    <!-- SCROLL BACK TO TOP BUTTON -->
-    <div class="scroll-top-button text-center align-middle">
-        <p>
-            <i class="fa fa-angle-up"></i>
-        </p>
-        <p>back to top</p>
-    </div>
-    <!-- / SCROLL BACK TO TOP BUTTON ends -->
     {% if page.footer %}
-        <footer role="contentinfo">
+        <footer
+            role="contentinfo">
+            <!-- SCROLL BACK TO TOP BUTTON -->
+            <div class="scroll-top-wrapper">
+                <div class="scroll-top-button">
+                    <p>
+                        <i class="fa fa-angle-up"></i>
+                    </p>
+                    <p>TOP</p>
+                </div>
+            </div>
+            <!-- / SCROLL BACK TO TOP BUTTON ends -->
             {{ page.footer }}
         </footer>
     {% endif %}

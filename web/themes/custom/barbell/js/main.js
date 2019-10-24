@@ -147,30 +147,54 @@ Drupal.behaviors.exampleModule = {
         "/barbell/web/themes/custom/barbell/img/se.webp",
         "/barbell/web/themes/custom/barbell/img/asics.webp"
       ];
-      let rasporedTable = document.querySelector("table");
-      var rasporedTableParent = rasporedTable.parentElement;
-      let legendaWrapper = document.createElement("div");
-      legendaWrapper.className = "legendaWrapper";
-      let legendaUl = document.createElement("ul");
-      for (let i = 0; i < 3; i++) {
-        let legendaLi = document.createElement("li");
-        let legendaImg = document.createElement("img");
-        let legendaSpan = document.createElement("span");
-        legendaImg.src = ikonaTreninga[i];
-        legendaSpan.innerHTML = vrstaTreninga[i];
-        legendaLi.appendChild(legendaImg);
-        legendaLi.appendChild(legendaSpan);
-        legendaUl.appendChild(legendaLi);
-        legendaWrapper.appendChild(legendaUl);
+      if (document.querySelector("table")) {
+        let rasporedTable = document.querySelector("table");
+        var rasporedTableParent = rasporedTable.parentElement;
+        let legendaWrapper = document.createElement("div");
+        legendaWrapper.className = "legendaWrapper";
+        let legendaUl = document.createElement("ul");
+        for (let i = 0; i < 3; i++) {
+          let legendaLi = document.createElement("li");
+          let legendaImg = document.createElement("img");
+          let legendaSpan = document.createElement("span");
+          legendaImg.src = ikonaTreninga[i];
+          legendaSpan.innerHTML = vrstaTreninga[i];
+          legendaLi.appendChild(legendaImg);
+          legendaLi.appendChild(legendaSpan);
+          legendaUl.appendChild(legendaLi);
+          legendaWrapper.appendChild(legendaUl);
+        }
+        rasporedTableParent.appendChild(legendaWrapper);
+        rasporedTableParent.classList.add("rasporedAllWrapper");
       }
-      rasporedTableParent.appendChild(legendaWrapper);
-      rasporedTableParent.classList.add("rasporedAllWrapper");
     }
 
     if (window.innerWidth <= 768) {
       rasporedLegendaIskraceniDani();
     }
 
-    // Back to top galerija
+    //SCROLL TO TOP
+    // scroll back to top button
+    let scrollTopButton = document.querySelector(".scroll-top-button");
+
+    // show / hide button
+    showHideButton = () => {
+      window.pageYOffset < 150
+        ? (scrollTopButton.style.display = "none")
+        : (scrollTopButton.style.display = "block");
+    };
+    document.addEventListener("scroll", showHideButton);
+
+    // scroll to top
+    window.addEventListener("load", function() {
+      document
+        .querySelector(".scroll-top-button")
+        .addEventListener("click", function(e) {
+          e.preventDefault();
+          document
+            .querySelector("header")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    });
   }
 };
