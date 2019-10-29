@@ -1,5 +1,6 @@
 Drupal.behaviors.exampleModule = {
   attach: function(context, settings) {
+    //RESPO NAVIGATION
     let navigacija = (function() {
       var langSwitch = document.querySelector("#block-languageswitcher");
       var hamburgerHolder = document.createElement("div");
@@ -63,7 +64,9 @@ Drupal.behaviors.exampleModule = {
         xHolder.addEventListener("click", closeNav);
       });
     })();
+    //RESPO NAVIGATION ENDS
 
+    //REMOVING INLINE STYLES
     const removeInlineStyles = (() => {
       //align-right
       //if (document.querySelector(".path-tim")) {
@@ -80,54 +83,152 @@ Drupal.behaviors.exampleModule = {
       });
       //}
     })();
+    //REMOVING INLINE STYLES ENDS
 
-    let raspored = (function() {
-      let td = document.querySelectorAll("td div");
-      td = [...td];
-      let text = "";
-      let icon = "";
+    //NOVI RASPORED
+    let noviRaspored = (function() {
+      //novi redovi
+      let tbody = document.querySelector("tbody");
+      for (let i = 1; i < 3; i++) {
+        let tr = tbody.lastElementChild;
+        let trClone = tr.cloneNode(true);
+        tbody.appendChild(trClone);
+      }
 
-      td.forEach(x => {
-        if (x.classList[0] === "raspored-ft") {
-          text = "FUNKCIONALNI TRENING";
-          icon = "/barbell/web/themes/custom/barbell/img/fe.webp";
-        } else if (x.classList[0] === "raspored-se") {
-          text = "SNAGA I ESTETIKA";
-          icon = "/barbell/web/themes/custom/barbell/img/se.webp";
-        } else if (x.classList[0] === "raspored-as") {
-          text = "ASICS ŠKOLA TRČANJA";
-          icon = "/barbell/web/themes/custom/barbell/img/asics.webp";
-        }
+      //th-nedelja i kolona nedelja
+      let theadTr = document.querySelector("thead tr");
+      let nedelja = document.createElement("th");
+      nedelja.setAttribute("scope", "col");
+      nedelja.innerHTML = "NEDELJA";
+      theadTr.appendChild(nedelja);
 
-        (function fixContent() {
-          removeInitialContent();
-          createNewContent();
-        })();
+      //td-ovi u koloni nedelja i novi sati
+      let sati = [
+        "09:00",
+        "10:00",
+        "11:00",
+        "12:00",
+        "16:00",
+        "17:00",
+        "18:00",
+        "19:00",
+        "20:00",
+        "21:00"
+      ];
 
-        function removeInitialContent() {
-          x.innerHTML = "";
-        }
+      let dani = document.querySelectorAll("thead th");
+      dani = [...dani];
+      dani.shift();
 
-        function createNewContent() {
-          const imgContainer = document.createElement("div");
-          const img = document.createElement("img");
-          const titleContainer = document.createElement("div");
-          const title = document.createElement("p");
+      //td content wrapper-i
+      function okviriZaTermineUtd(x) {
+        const imgContainer = document.createElement("div");
+        const img = document.createElement("img");
+        const titleContainer = document.createElement("div");
+        const title = document.createElement("p");
 
-          x.appendChild(imgContainer);
-          x.appendChild(titleContainer);
-          titleContainer.appendChild(title);
-          imgContainer.appendChild(img);
+        x.appendChild(imgContainer);
+        x.appendChild(titleContainer);
+        titleContainer.appendChild(title);
+        imgContainer.appendChild(img);
 
-          titleContainer.className = "rasporedTitleHolder";
-          title.className = "rasporedText";
-          imgContainer.className = "rasporedImgWrapper";
+        titleContainer.className = "rasporedTitleHolder";
+        title.className = "rasporedText";
+        imgContainer.className = "rasporedImgWrapper";
+      }
 
-          title.innerHTML = text;
-          img.src = icon;
-        }
+      let tbodyTr = document.querySelectorAll("tbody tr");
+      tbodyTr = [...tbodyTr];
+      tbodyTr.forEach((it, index) => {
+        let newTd = document.createElement("td");
+        it.appendChild(newTd);
+        it.firstElementChild.innerHTML = sati[index];
+        let tdInThisRow = it.children;
+        tdInThisRow = [...tdInThisRow];
+        tdInThisRow.shift();
+
+        //id-jevi za dane po satu (npr za celiju ponedeljak 09:00 - id = PON09)
+        tdInThisRow.forEach((it, i) => {
+          it.innerHTML = "";
+          okviriZaTermineUtd(it);
+          if (i == 3) {
+            it.id = "CET" + sati[index].substring(0, 2);
+          } else {
+            it.id =
+              dani[i].innerHTML.substring(0, 3) + sati[index].substring(0, 2);
+          }
+        });
       });
     })();
+
+    let vrstaTreninga = [
+      "FUNKCIONALNI TRENING",
+      "SNAGA I ESTETIKA",
+      "HIP HOP ČASOVI"
+    ];
+
+    let ikonaTreninga = [
+      "/barbell/web/themes/custom/barbell/img/fe.webp",
+      "/barbell/web/themes/custom/barbell/img/se.webp",
+      "/barbell/web/themes/custom/barbell/img/hh.webp"
+    ];
+
+    function raspored([...ftTermini], [...seTermini], [...hhTermini]) {
+      ftTermini = [...ftTermini];
+      seTermini = [...seTermini];
+      hhTermini = [...hhTermini];
+
+      ftTermini.forEach((it, i) => {
+        let termin = document.getElementById(it);
+        termin.style.background = "#E3E3E3";
+        termin.firstElementChild.firstElementChild.src = ikonaTreninga[0];
+        termin.lastElementChild.firstElementChild.innerHTML = vrstaTreninga[0];
+      });
+
+      seTermini.forEach((it, i) => {
+        let termin = document.getElementById(it);
+        termin.style.background = "#E3E3E3";
+        termin.firstElementChild.firstElementChild.src = ikonaTreninga[1];
+        termin.lastElementChild.firstElementChild.innerHTML = vrstaTreninga[1];
+      });
+
+      hhTermini.forEach((it, i) => {
+        let termin = document.getElementById(it);
+        termin.style.background = "#E3E3E3";
+        termin.firstElementChild.firstElementChild.src = ikonaTreninga[2];
+        termin.lastElementChild.firstElementChild.innerHTML = vrstaTreninga[2];
+      });
+    }
+
+    //SETOVANJE TERMINA, redom:
+    //Funkcionalni trening,
+    //Snaga i estetika,
+    //Hiphop casovi
+    //UNOSI SE ID TD-a u niz
+    raspored(
+      [
+        "PON09",
+        "PON18",
+        "PON19",
+        "PON20",
+        "UTO18",
+        "UTO19",
+        "SRE09",
+        "SRE18",
+        "SRE19",
+        "SRE20",
+        "CET18",
+        "CET19",
+        "PET09",
+        "PET18",
+        "PET19",
+        "PET20",
+        "SUB10",
+        "SUB11"
+      ],
+      ["UTO20", "CET20", "SUB12"],
+      ["SUB16", "NED16"]
+    );
 
     function rasporedLegendaIskraceniDani() {
       // skraceni dani
@@ -137,16 +238,6 @@ Drupal.behaviors.exampleModule = {
       days.forEach(it => (it.innerHTML = it.innerHTML.substring(0, 3)));
 
       // raspored legenda
-      let vrstaTreninga = [
-        "FUNKCIONALNI TRENING",
-        "SNAGA I ESTETIKA",
-        "ASICS ŠKOLA TRČANJA"
-      ];
-      let ikonaTreninga = [
-        "/barbell/web/themes/custom/barbell/img/fe.webp",
-        "/barbell/web/themes/custom/barbell/img/se.webp",
-        "/barbell/web/themes/custom/barbell/img/asics.webp"
-      ];
       if (document.querySelector("table")) {
         let rasporedTable = document.querySelector("table");
         var rasporedTableParent = rasporedTable.parentElement;
@@ -172,6 +263,7 @@ Drupal.behaviors.exampleModule = {
     if (window.innerWidth <= 768) {
       rasporedLegendaIskraceniDani();
     }
+    //RASPORED ENDS
 
     //SCROLL TO TOP
     // scroll back to top button
@@ -196,8 +288,9 @@ Drupal.behaviors.exampleModule = {
             .scrollIntoView({ behavior: "smooth" });
         });
     });
-    // /SCROLL TO TOP ENDS
+    // /SCROLL TO TOP ENDS /
 
+    //FIXED FOOTER
     let fixedFooter = (function() {
       let layoutContainer = document.querySelector(".layout-container");
       let footer = document.querySelector("footer");
@@ -208,5 +301,6 @@ Drupal.behaviors.exampleModule = {
         footer.style.bottom = "0";
       }
     })();
+    //FIXED FOOTER ENDS /
   }
 };

@@ -43,6 +43,7 @@ thead > tr {
 }
 
 thead > tr > th:nth-child(1n + 2) {
+  width: 200px;
   min-width: 190px !important;
   padding: 10px;
   display: table-cell;
@@ -73,31 +74,6 @@ tr > th {
   padding: 90% 5px;
 }
 
-.raspored-as,
-.raspored-ft,
-.raspored-se {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  /* width: 100%; */
-  /* height: 100%; */
-  margin: 0;
-}
-
-.raspored-as {
-  background: #e3e3e3;
-}
-
-.raspored-ft {
-  background: #e3e3e3;
-}
-
-.raspored-se {
-  background: #e3e3e3;
-}
-
 .rasporedText {
   font-family: "Brandon Grotesque Bold" !important;
   text-align: center !important;
@@ -119,11 +95,11 @@ tr > th {
   width: 100px;
 }
 
-.raspored-as img {
+/* .raspored-as img {
   width: 70px;
-}
+} */
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1580px) {
   thead > tr > th:nth-child(1n + 2) {
     min-width: 150px !important;
   }
@@ -141,12 +117,12 @@ tr > th {
     font-size: 1.1rem;
   }
 
-  .raspored-as img {
+  /* .raspored-as img {
     width: 60px;
-  }
+  } */
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1300px) {
   thead > tr > th:nth-child(1n + 2) {
     min-width: 100px !important;
   }
@@ -175,9 +151,43 @@ tr > th {
     width: 50px;
   }
 
-  .raspored-as img {
+  /* .raspored-as img {
     width: 35px;
+  } */
+}
+
+@media only screen and (max-width: 880px) {
+  thead > tr > th:nth-child(1n + 2) {
+    min-width: 85px !important;
   }
+
+  tr > th,
+  thead > tr > th:first-child {
+    width: 44px;
+    margin: 0;
+    font-size: 0.6rem;
+  }
+
+  thead tr th:nth-child(1) {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .rasporedText {
+    font-size: 10px !important;
+    margin: 0 !important;
+    padding: 0 0px !important;
+    line-height: 13px;
+  }
+
+  .rasporedImgWrapper img {
+    height: auto;
+    width: 50px;
+  }
+
+  /* .raspored-as img {
+    width: 35px;
+  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -255,9 +265,9 @@ tr > th {
     width: 35px;
   }
 
-  .raspored-as img {
+  /* .raspored-as img {
     width: 24px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 430px) {
@@ -303,7 +313,7 @@ tr > th {
     width: 28px;
   }
 
-  .raspored-as img {
+  /* .raspored-as img {
     width: 19px;
-  }
+  } */
 }
