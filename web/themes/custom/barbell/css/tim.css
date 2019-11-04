@@ -33,6 +33,7 @@
 
 .view-tim .view-content div div a .tim-image div img {
   width: 100%;
+  height: auto;
 }
 
 .tim-thumb {
