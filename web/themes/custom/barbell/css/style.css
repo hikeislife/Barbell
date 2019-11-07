@@ -590,7 +590,7 @@ footer div nav ul.menu a.is-active {
   font-family: "Brandon Grotesque Bold", sans-serif;
   color: whitesmoke;
   text-align: center;
-  background: gray;
+  /*background: gray;*/
 }
 
 .kontakt-block-content h3 {
