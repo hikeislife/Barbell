@@ -1,13 +1,3 @@
-/* TODO: remove this before publishing */
-.path-programi
-  .view-content
-  .views-row
-  .program-thumb
-  .program-link
-  .program-image {
-  border: 1px solid dimgray;
-}
-
 /* Basic layout of one box */
 
 .path-programi .program-link {
@@ -29,7 +19,17 @@
   .program-image {
   grid-column: 2/3;
   grid-row: 1/2;
+  
 }
+
+.path-programi
+  .view-content
+  .views-row
+  .program-thumb
+  .program-link
+  .program-image {
+background-size: cover;
+  }
 
 /* OUTER INFO WRAPPER */
 .path-programi .views-row .program-info-wrapper {
@@ -79,16 +79,14 @@
 @media only screen and (min-width: 624px) and (max-width: 848px) {
   .path-programi .view-content .program-thumb {
     height: 275px;
+    margin-bottom: 7em !important;
   }
 }
 
 @media only screen and (min-width: 430px) and (max-width: 624px) {
-  /* .path-programi .views-row .program-info-wrapper-mini {
-    height: 100%;
-  } */
-
   .path-programi .view-content .program-thumb {
     height: 230px;
+    margin-bottom: 7em !important;
   }
 }
 
