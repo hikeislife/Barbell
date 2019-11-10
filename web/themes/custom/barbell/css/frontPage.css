@@ -1,9 +1,9 @@
 /* POČETNA */
 
 /* slider */
-#hero-section {
-  background: black; /* where the image should be just for visibility sake */
-}
+/* #hero-section {
+   background: black; where the image should be just for visibility sake 
+} */
 
 .slider-content {
   display: flex;
@@ -30,10 +30,17 @@
   border: none;
 }
 
+.slider-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+}
+
 #slick-views-front-slider-block-1-1-slider {
-  padding-top: 1px;
+  /* padding-top: 1px; */
   margin-top: -1px;
-  height: calc(100vh - 73px);
+  /*height: calc(100vh - 73px);*/
   position: relative;
 }
 
