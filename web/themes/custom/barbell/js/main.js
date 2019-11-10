@@ -164,9 +164,9 @@ Drupal.behaviors.exampleModule = {
     ];
 
     let ikonaTreninga = [
-      "/themes/custom/barbell/img/fe.webp",
-      "/themes/custom/barbell/img/se.webp",
-      "/themes/custom/barbell/img/hh.webp"
+      "/barbell/web/sites/default/files/img/fe.webp",
+      "/barbell/web/sites/default/files/img/se.webp",
+      "/barbell/web/sites/default/files/img/hh.webp"
     ];
 
     function raspored([...ftTermini], [...seTermini], [...hhTermini]) {
