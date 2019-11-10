@@ -5,7 +5,7 @@ Drupal.behaviors.exampleModule = {
       var langSwitch = document.querySelector("#block-languageswitcher");
       var hamburgerHolder = document.createElement("div");
       var hamburgerImg = document.createElement("img");
-      hamburgerImg.src = "/themes/custom/barbell/img/hamburger.png";
+      hamburgerImg.src = "/barbell/web/sites/default/files/img/hamburger.png";
       hamburgerHolder.classList.add("hamburgerHolder");
       hamburgerHolder.appendChild(hamburgerImg);
       langSwitch.appendChild(hamburgerHolder);
