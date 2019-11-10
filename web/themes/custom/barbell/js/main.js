@@ -38,15 +38,9 @@ Drupal.behaviors.exampleModule = {
         function closeNav() {
           nav.style.top = "-100vh";
           xHolder.style.display = "none";
-
-          // setTimeout(() => {
           xPara.style.fontSize = "1px";
           xPara.style.opacity = "0";
-          // }, 300);
-
-          // setTimeout(() => {
           xHolder.style.border = "none";
-          // }, 900);
         }
 
         var navLinks = document.querySelectorAll(
@@ -86,80 +80,82 @@ Drupal.behaviors.exampleModule = {
     //REMOVING INLINE STYLES ENDS
 
     //NOVI RASPORED
-    let noviRaspored = (function() {
-      //novi redovi
-      let tbody = document.querySelector("tbody");
-      for (let i = 1; i < 3; i++) {
-        let tr = tbody.lastElementChild;
-        let trClone = tr.cloneNode(true);
-        tbody.appendChild(trClone);
-      }
+    if (document.querySelector("table")) {
+      let noviRaspored = (function() {
+        //novi redovi
+        let tbody = document.querySelector("tbody");
+        for (let i = 1; i < 3; i++) {
+          let tr = tbody.lastElementChild;
+          let trClone = tr.cloneNode(true);
+          tbody.appendChild(trClone);
+        }
 
-      //th-nedelja i kolona nedelja
-      let theadTr = document.querySelector("thead tr");
-      let nedelja = document.createElement("th");
-      nedelja.setAttribute("scope", "col");
-      nedelja.innerHTML = "NEDELJA";
-      theadTr.appendChild(nedelja);
+        //th-nedelja i kolona nedelja
+        let theadTr = document.querySelector("thead tr");
+        let nedelja = document.createElement("th");
+        nedelja.setAttribute("scope", "col");
+        nedelja.innerHTML = "NEDELJA";
+        theadTr.appendChild(nedelja);
 
-      //td-ovi u koloni nedelja i novi sati
-      let sati = [
-        "09:00",
-        "10:00",
-        "11:00",
-        "12:00",
-        "16:00",
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00"
-      ];
+        //td-ovi u koloni nedelja i novi sati
+        let sati = [
+          "09:00",
+          "10:00",
+          "11:00",
+          "12:00",
+          "16:00",
+          "17:00",
+          "18:00",
+          "19:00",
+          "20:00",
+          "21:00"
+        ];
 
-      let dani = document.querySelectorAll("thead th");
-      dani = [...dani];
-      dani.shift();
+        let dani = document.querySelectorAll("thead th");
+        dani = [...dani];
+        dani.shift();
 
-      //td content wrapper-i
-      function okviriZaTermineUtd(x) {
-        const imgContainer = document.createElement("div");
-        const img = document.createElement("img");
-        const titleContainer = document.createElement("div");
-        const title = document.createElement("p");
+        //td content wrapper-i
+        function okviriZaTermineUtd(x) {
+          const imgContainer = document.createElement("div");
+          const img = document.createElement("img");
+          const titleContainer = document.createElement("div");
+          const title = document.createElement("p");
 
-        x.appendChild(imgContainer);
-        x.appendChild(titleContainer);
-        titleContainer.appendChild(title);
-        imgContainer.appendChild(img);
+          x.appendChild(imgContainer);
+          x.appendChild(titleContainer);
+          titleContainer.appendChild(title);
+          imgContainer.appendChild(img);
 
-        titleContainer.className = "rasporedTitleHolder";
-        title.className = "rasporedText";
-        imgContainer.className = "rasporedImgWrapper";
-      }
+          titleContainer.className = "rasporedTitleHolder";
+          title.className = "rasporedText";
+          imgContainer.className = "rasporedImgWrapper";
+        }
 
-      let tbodyTr = document.querySelectorAll("tbody tr");
-      tbodyTr = [...tbodyTr];
-      tbodyTr.forEach((it, index) => {
-        let newTd = document.createElement("td");
-        it.appendChild(newTd);
-        it.firstElementChild.innerHTML = sati[index];
-        let tdInThisRow = it.children;
-        tdInThisRow = [...tdInThisRow];
-        tdInThisRow.shift();
+        let tbodyTr = document.querySelectorAll("tbody tr");
+        tbodyTr = [...tbodyTr];
+        tbodyTr.forEach((it, index) => {
+          let newTd = document.createElement("td");
+          it.appendChild(newTd);
+          it.firstElementChild.innerHTML = sati[index];
+          let tdInThisRow = it.children;
+          tdInThisRow = [...tdInThisRow];
+          tdInThisRow.shift();
 
-        //id-jevi za dane po satu (npr za celiju ponedeljak 09:00 - id = PON09)
-        tdInThisRow.forEach((it, i) => {
-          it.innerHTML = "";
-          okviriZaTermineUtd(it);
-          if (i == 3) {
-            it.id = "CET" + sati[index].substring(0, 2);
-          } else {
-            it.id =
-              dani[i].innerHTML.substring(0, 3) + sati[index].substring(0, 2);
-          }
+          //id-jevi za dane po satu (npr za celiju ponedeljak 09:00 - id = PON09)
+          tdInThisRow.forEach((it, i) => {
+            it.innerHTML = "";
+            okviriZaTermineUtd(it);
+            if (i == 3) {
+              it.id = "CET" + sati[index].substring(0, 2);
+            } else {
+              it.id =
+                dani[i].innerHTML.substring(0, 3) + sati[index].substring(0, 2);
+            }
+          });
         });
-      });
-    })();
+      })();
+    }
 
     let vrstaTreninga = [
       "FUNKCIONALNI TRENING",
@@ -180,23 +176,32 @@ Drupal.behaviors.exampleModule = {
 
       ftTermini.forEach((it, i) => {
         let termin = document.getElementById(it);
-        termin.style.background = "#E3E3E3";
-        termin.firstElementChild.firstElementChild.src = ikonaTreninga[0];
-        termin.lastElementChild.firstElementChild.innerHTML = vrstaTreninga[0];
+        if (termin) {
+          termin.style.background = "#E3E3E3";
+          termin.firstElementChild.firstElementChild.src = ikonaTreninga[0];
+          termin.lastElementChild.firstElementChild.innerHTML =
+            vrstaTreninga[0];
+        }
       });
 
       seTermini.forEach((it, i) => {
         let termin = document.getElementById(it);
-        termin.style.background = "#E3E3E3";
-        termin.firstElementChild.firstElementChild.src = ikonaTreninga[1];
-        termin.lastElementChild.firstElementChild.innerHTML = vrstaTreninga[1];
+        if (termin) {
+          termin.style.background = "#E3E3E3";
+          termin.firstElementChild.firstElementChild.src = ikonaTreninga[1];
+          termin.lastElementChild.firstElementChild.innerHTML =
+            vrstaTreninga[1];
+        }
       });
 
       hhTermini.forEach((it, i) => {
         let termin = document.getElementById(it);
-        termin.style.background = "#E3E3E3";
-        termin.firstElementChild.firstElementChild.src = ikonaTreninga[2];
-        termin.lastElementChild.firstElementChild.innerHTML = vrstaTreninga[2];
+        if (termin) {
+          termin.style.background = "#E3E3E3";
+          termin.firstElementChild.firstElementChild.src = ikonaTreninga[2];
+          termin.lastElementChild.firstElementChild.innerHTML =
+            vrstaTreninga[2];
+        }
       });
     }
 

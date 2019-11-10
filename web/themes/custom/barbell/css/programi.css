@@ -1,5 +1,10 @@
 /* TODO: remove this before publishing */
-.path-programi .view-content .views-row .program-thumb .program-link .program-image {
+.path-programi
+  .view-content
+  .views-row
+  .program-thumb
+  .program-link
+  .program-image {
   border: 1px solid dimgray;
 }
 
@@ -16,7 +21,12 @@
 }
 
 /* OKRETANJE PARNIH PROGRAMA NA DRUGU STRANU */
-.path-programi .view-content .views-row:nth-child(even) .program-thumb .program-link .program-image {
+.path-programi
+  .view-content
+  .views-row:nth-child(even)
+  .program-thumb
+  .program-link
+  .program-image {
   grid-column: 2/3;
   grid-row: 1/2;
 }
@@ -58,14 +68,24 @@
 .path-programi .views-row .program-info-wrapper-mini {
   background: whitesmoke;
   padding: 0.3em;
-  
+
   font-family: "Brandon Grotesque Medium";
 }
 
-@media only screen and (min-width: 430px) and (max-width: 624px) {
-  .path-programi .views-row .program-info-wrapper-mini {
-    height: 100%;
+.path-programi .views-row .program-info-wrapper-mini {
+  height: 100%;
+}
+
+@media only screen and (min-width: 624px) and (max-width: 848px) {
+  .path-programi .view-content .program-thumb {
+    height: 275px;
   }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 624px) {
+  /* .path-programi .views-row .program-info-wrapper-mini {
+    height: 100%;
+  } */
 
   .path-programi .view-content .program-thumb {
     height: 230px;
@@ -140,7 +160,7 @@
   }
 
   .path-programi .views-row .program-info-wrapper-mini {
-    padding: 1em .7em;
+    padding: 1em 0.7em;
   }
 
   .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
@@ -148,7 +168,8 @@
   }
 }
 
-@media only screen and (min-width: 39em) { /*608*/
+@media only screen and (min-width: 39em) {
+  /*608*/
   .path-programi .program-link {
     width: 37.5em;
   }
@@ -162,7 +183,8 @@
   }
 }
 
-@media only screen and (min-width: 53em) {/*832*/
+@media only screen and (min-width: 53em) {
+  /*832*/
   .path-programi .program-link {
     width: 25em;
   }
@@ -179,7 +201,8 @@
     margin-bottom: 3em;
   }
 
-  .path-programi .program-thumb, .path-programi .program-thumb .program-info-wrapper-mini {
+  .path-programi .program-thumb,
+  .path-programi .program-thumb .program-info-wrapper-mini {
     height: 100%;
   }
 
@@ -189,7 +212,8 @@
   }
 }
 
-@media only screen and (min-width: 76em) { /*1216*/
+@media only screen and (min-width: 76em) {
+  /*1216*/
   .path-programi .program-link {
     width: 37.5em;
   }
@@ -208,7 +232,7 @@
   }
 
   .path-programi .views-row:nth-child(odd) .program-info-wrapper-mini {
-    clip-path: polygon(37.3% 0, 100% 0, 100% 100%, .5% 100%);
+    clip-path: polygon(37.3% 0, 100% 0, 100% 100%, 0.5% 100%);
   }
 
   .path-programi .views-row:nth-child(even) .program-info-wrapper-mini {
