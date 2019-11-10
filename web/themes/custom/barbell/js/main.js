@@ -5,7 +5,7 @@ Drupal.behaviors.exampleModule = {
       var langSwitch = document.querySelector("#block-languageswitcher");
       var hamburgerHolder = document.createElement("div");
       var hamburgerImg = document.createElement("img");
-      hamburgerImg.src = "/barbell/web/themes/custom/barbell/img/hamburger.png";
+      hamburgerImg.src = "/themes/custom/barbell/img/hamburger.png";
       hamburgerHolder.classList.add("hamburgerHolder");
       hamburgerHolder.appendChild(hamburgerImg);
       langSwitch.appendChild(hamburgerHolder);
@@ -64,17 +64,17 @@ Drupal.behaviors.exampleModule = {
     const removeInlineStyles = (() => {
       //align-right
       //if (document.querySelector(".path-tim")) {
-      const regionOfRelevantImages = document.querySelector("main");
-      let imgs = regionOfRelevantImages.querySelectorAll("img");
-      imgs = [...imgs];
-      imgs.forEach(x => {
-        if (x.attributes.length - 1) {
-          x.attributes.removeNamedItem("width");
-          x.attributes.removeNamedItem("height");
-          if (x.classList.contains("align-right"))
-            x.classList.remove("align-right");
-        }
-      });
+      // const regionOfRelevantImages = document.querySelector("main");
+      // let imgs = regionOfRelevantImages.querySelectorAll("img");
+      // imgs = [...imgs];
+      // imgs.forEach(x => {
+      //   if (x.attributes.length - 1) {
+      //     x.attributes.removeNamedItem("width");
+      //     x.attributes.removeNamedItem("height");
+      //     if (x.classList.contains("align-right"))
+      //       x.classList.remove("align-right");
+      //   }
+      // });
       //}
     })();
     //REMOVING INLINE STYLES ENDS
@@ -164,9 +164,9 @@ Drupal.behaviors.exampleModule = {
     ];
 
     let ikonaTreninga = [
-      "/barbell/web/themes/custom/barbell/img/fe.webp",
-      "/barbell/web/themes/custom/barbell/img/se.webp",
-      "/barbell/web/themes/custom/barbell/img/hh.webp"
+      "/themes/custom/barbell/img/fe.webp",
+      "/themes/custom/barbell/img/se.webp",
+      "/themes/custom/barbell/img/hh.webp"
     ];
 
     function raspored([...ftTermini], [...seTermini], [...hhTermini]) {
