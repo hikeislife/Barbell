@@ -364,8 +364,6 @@ header div div .links {
   margin: 2em 0;
 }
 
-
-
 @media only screen and (min-width: 576px) {
   .field--name-body p strong {
     font-family: "Brandon Grotesque Bold";
@@ -391,7 +389,7 @@ header div div .links {
 @media only screen and (max-width: 576px) {
   .field--name-body p strong {
     font-size: 19px;
-    
+
     font-family: "Brandon Grotesque Medium";
     /*font-weight: 1;*/
   }
@@ -555,9 +553,6 @@ footer div nav ul.menu a.is-active {
   align-items: center;
 }
 
-
-
-
 /* +++++++++++ KONTAKT +++++++++++ */
 
 #pre_footer {
@@ -718,4 +713,11 @@ footer div nav ul.menu a.is-active {
     bottom: -14px !important;
     left: -28px !important;
   }
+}
+
+.slick-track,
+.slick__slide,
+.front-slider,
+.slider-image {
+  height: calc(100vh - 75px);
 }
