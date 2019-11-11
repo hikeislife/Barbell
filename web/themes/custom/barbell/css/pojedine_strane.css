@@ -41,7 +41,7 @@ blockquote p:after {
   .field--name-field-link-button {
     padding: 0;
   }
-  
+
   /* .page-node-type-tim .field--name-field-link-button div {
     padding: 0;
     margin: 1em 2em;
@@ -82,14 +82,12 @@ blockquote p:after {
     width: 50%;
     float: right;
   }*/
-
-
 }
 
 @media only screen and (min-width: 1200px) {
   #block-barbell-content p {
     font-size: 40px;
-    margin: -1em 220px 2em;
+    margin: 1.5em 220px 2em;
   }
 
   blockquote p {
@@ -118,4 +116,3 @@ blockquote p:after {
     margin: -1em auto 2em;
   }
 }
-

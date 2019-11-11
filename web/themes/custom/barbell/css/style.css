@@ -714,10 +714,3 @@ footer div nav ul.menu a.is-active {
     left: -28px !important;
   }
 }
-
-.slick-track,
-.slick__slide,
-.front-slider,
-.slider-image {
-  height: calc(100vh - 75px);
-}

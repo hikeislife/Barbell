@@ -1,23 +1,20 @@
 /* POČETNA */
 
-/* slider */
-/* #hero-section {
-   background: black; where the image should be just for visibility sake 
-} */
+.front-slider,
+.slider-image {
+  height: calc(100vh - 75px);
+}
+
+@media only screen and (max-width: 768px) {
+  .front-slider,
+  .slider-image {
+    height: calc(65vh - 75px);
+  }
+}
 
 .slider-content {
   display: flex;
   flex-direction: column;
-}
-
-/* .slider-link div div a {
-    text-transform: uppercase;
-    text-decoration: none;
-} */
-
-/* DEVELOPMENTAL */
-.slide--1 {
-  display: none;
 }
 
 .slide
@@ -34,7 +31,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* filter: brightness(50%); */
   height: 100%;
 }
 
@@ -50,7 +46,7 @@ h2 span:before {
   position: absolute;
   left: -29px;
   z-index: -1;
-  top: 2px;
+  top: 6px;
 }
 
 @media only screen and (max-width: 768px) {
