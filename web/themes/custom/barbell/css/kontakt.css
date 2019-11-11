@@ -1,6 +1,8 @@
 form {
   display: flex;
   flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 200px;
 }
 
@@ -58,7 +60,21 @@ textarea {
   background: darkorange;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 992px) {
+  form {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+/* @media only screen and (max-width: 992px) {
+  form {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+} */
+
+@media only screen and (max-width: 415px) {
   form div:nth-child(1) label,
   form div:nth-child(2) label {
     height: 100px;
