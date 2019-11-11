@@ -21,3 +21,4 @@ global-styling:
       css/raspored.css: {}
       css/galerija.css: {}
       css/pojedine_strane.css: {}
+      css/kontakt.css: {}
