@@ -308,15 +308,15 @@ Drupal.behaviors.exampleModule = {
     })();
     //FIXED FOOTER ENDS /
 
-    fixContactImg = (() => {
-      if (document.querySelector(".front-kontakt-holder")) {
-        const contact = document.querySelector(".front-kontakt-holder");
+    // fixContactImg = (() => {
+    //   if (document.querySelector(".front-kontakt-holder")) {
+    //     const contact = document.querySelector(".front-kontakt-holder");
 
-        const oldPath = contact.style.backgroundImage.split('"');
-        const newPath = oldPath[0] + '".' + oldPath[1] + '"' + oldPath[2];
-        contact.style.backgroundImage = newPath;
-      }
-    })();
+    //     const oldPath = contact.style.backgroundImage.split('"');
+    //     const newPath = oldPath[0] + '".' + oldPath[1] + '"' + oldPath[2];
+    //     contact.style.backgroundImage = newPath;
+    //   }
+    // })();
 
     //KONTAKT SOC IKONE
 
