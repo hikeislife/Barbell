@@ -71,7 +71,7 @@ blockquote p:after {
 
 @media only screen and (min-width: 992px) {
   .path-node #block-barbell-content {
-    padding: 0 2em;
+    padding: 0 2.5em;
   }
 
   .align-rigth {
