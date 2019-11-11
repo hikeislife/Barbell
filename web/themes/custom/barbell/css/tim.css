@@ -97,6 +97,13 @@
   margin: 0 0 -6px 0;
 }
 
+
+@media only screen and  (min-width: 1325px) {
+  .tim-description {
+    height: 95px;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1325px) {
   .view-tim .view-content {
     width: 80vw;
@@ -104,6 +111,10 @@
 
   .tim-title {
     font-size: 35px;
+  }
+
+  .tim-description {
+    height: 95px;
   }
 }
 
@@ -115,6 +126,10 @@
 
   .tim-title {
     font-size: 30px;
+  }
+
+  .tim-description {
+    height: 95px;
   }
 }
 
@@ -131,6 +146,7 @@
   .tim-description {
     font-size: 22px;
     margin-bottom: 20px;
+    height: 130px;
   }
 }
 
@@ -147,6 +163,7 @@
   .tim-description {
     font-size: 20px;
     margin-bottom: 15px;
+    height: 130px;
   }
 }
 
@@ -163,5 +180,14 @@
   .tim-description {
     font-size: 17px;
     margin-bottom: 5px;
+  }
+
+  .tim-info-wrapper {
+    line-height: 18px;
+    height: 180px;
+  }
+
+  .tim-description::before {
+    margin: 10px auto;
   }
 }

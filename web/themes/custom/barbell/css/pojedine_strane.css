@@ -11,6 +11,7 @@
 .align-left {
   width: 100%;
   height: auto;
+  padding-bottom: 1.5em;
 }
 
 blockquote p {
@@ -26,9 +27,9 @@ blockquote p:after {
 }
 
 @media only screen and (max-width: 360px) {
-  /* .page-node-type-article #block-zakazitetrening p {
-    margin: 0 2em 2em;
-  } */
+  .page-node-type-article #block-zakazitetrening p {
+    margin: 2em 0;
+  }
 
   .page-node-type-program .field--name-field-link-button div,
   .page-node-type-tim .field--name-field-link-button div,
@@ -65,12 +66,14 @@ blockquote p:after {
     font-size: 36px !important;
   }
 }
-.path-node #block-barbell-content {
+.path-node #block-barbell-content,
+.page-node-type-tim p {
   padding: 0 1em;
 }
 
 @media only screen and (min-width: 992px) {
-  .path-node #block-barbell-content {
+  .path-node #block-barbell-content,
+  .page-node-type-tim p {
     padding: 0 2em;
   }
 
