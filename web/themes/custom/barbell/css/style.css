@@ -521,6 +521,8 @@ footer {
 #block-yearname div p {
   color: var(--yellow);
   text-align: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -577,7 +579,6 @@ footer div nav ul.menu a.is-active {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* @media only screen and (max-width: 992) {} */
 @media only screen and (max-width: 992px) {
   #pre_footer {
     grid-template-columns: 1fr;

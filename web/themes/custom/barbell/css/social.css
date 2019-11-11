@@ -18,13 +18,17 @@
   display: inline;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   #block-mainnavigation ul li {
     display: block;
     padding-left: 35px;
   }
   #block-mainnavigation ul {
     margin: 20px;
+  }
+
+  .region-footer {
+    height: unset;
   }
 }
 
