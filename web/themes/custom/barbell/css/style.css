@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  font-variant-ligatures: none;
 }
 
 @font-face {
@@ -74,7 +75,7 @@ body,
   position: relative;
 }
 
-a {
+.path-frontpage .text-formatted p a {
   text-decoration: none;
   color: #e52828;
 }
@@ -361,7 +362,7 @@ header div div .links {
 }
 
 /* bold prices txt */
-.field--name-body p strong {
+.page-node-type-program .field--name-body p strong {
   font-family: "Brandon Grotesque Bold";
   font-size: 30px;
   letter-spacing: 1px;
@@ -370,7 +371,7 @@ header div div .links {
 }
 
 @media only screen and (min-width: 576px) {
-  .field--name-body p strong {
+  .page-node-type-program .field--name-body p strong {
     font-family: "Brandon Grotesque Bold";
     font-size: 20px;
     /* font-weight: 1; */
@@ -378,21 +379,21 @@ header div div .links {
 }
 
 @media only screen and (min-width: 768px) {
-  .field--name-body p strong {
+  .page-node-type-program .field--name-body p strong {
     font-size: 25px;
     /* font-weight: 1; */
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .field--name-body p strong {
+  .page-node-type-program .field--name-body p strong {
     font-size: 40px;
     /* font-weight: 1; */
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .field--name-body p strong {
+  .page-node-type-program .field--name-body p strong {
     font-size: 19px;
 
     font-family: "Brandon Grotesque Medium";
@@ -572,9 +573,12 @@ footer div nav ul.menu a.is-active {
 
 .front-kontakt-holder {
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 992) {} */
+@media only screen and (max-width: 992px) {
   #pre_footer {
     grid-template-columns: 1fr;
     height: unset;
@@ -582,7 +586,7 @@ footer div nav ul.menu a.is-active {
 
   #pre_footer .pre_footer_right,
   .pre_footer_right div {
-    height: 175px;
+    height: 200px;
   }
 }
 

@@ -256,25 +256,6 @@ h2 span {
   border: var(--yellow);
 }
 
-/* .slick-prev,
-.slick-next {
-  content: " " !important;
-  background: var(--yellow);
-  visibility: hidden;
-} */
-
-/* .slick-prev:before,
-.slick-next:before {
-  content: " ";
-  background: var(--yellow);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  z-index: 10;
-  visibility: visible;
-  display: inline-block;
-} */
-
 /* PROGRAM BOXES */
 
 @media only screen and (min-width: 320px) and (max-width: 992px) {
