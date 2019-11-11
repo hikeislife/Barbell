@@ -1,0 +1,67 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.field__label {
+  visibility: hidden;
+}
+
+label,
+input {
+  border: 1px solid black;
+  height: 80px;
+}
+
+label {
+  display: block;
+  font-family: "Brandon Grotesque Medium";
+  font-size: 25px;
+  border-bottom: none;
+  padding: 21px 30px;
+}
+
+input {
+  width: 100%;
+  font-size: 19px;
+  padding: 29px 30px;
+}
+
+textarea {
+  height: 250px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+input,
+textarea {
+  font-size: 19px;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.button {
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 25px;
+  border-radius: 7px;
+  background: var(--yellow);
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: darkorange;
+}
+
+@media only screen and (max-width: 400px) {
+  form div:nth-child(1) label,
+  form div:nth-child(2) label {
+    height: 100px;
+    line-height: 29px;
+  }
+}
