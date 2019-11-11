@@ -66,36 +66,46 @@ blockquote p:after {
     font-size: 36px !important;
   }
 }
-.path-node #block-barbell-content,
+.page-node-type-tim #block-barbell-content,
 .page-node-type-tim p {
   padding: 0 1em;
 }
 
-@media only screen and (min-width: 992px) {
-  .path-node #block-barbell-content,
+@media only screen and (min-width: 1200px) {
+  .page-node-type-tim #block-barbell-content,
   .page-node-type-tim p {
     padding: 0 2.5em;
-
-  }
+  } 
 
   .align-rigth {
     width: 50%;
     float: right;
+    position: relative;
+    bottom: -10px;
+    padding: 0;
+  }
+  .align-left {
+    width: 50%;
+    float: left;
+    position: relative;
+    bottom: -10px;
+    padding: 0;
   }
 }
 
-.path-node #block-barbell-content p {
+.page-node-type-tim #block-barbell-content p {
   margin: 0;
 }
 
 @media only screen and (min-width: 1200px) {
-  .path-node #block-barbell-content {
+  .page-node-type-tim #block-barbell-content {
     padding: 0 10em;
   }
 
-  #block-barbell-content p {
-    font-size: 40px;
-    margin: 1.5em 220px 2em;
+  .page-node-type-tim #block-barbell-content p {
+    font-size: 38px;
+    /* margin: 1.5em 220px 2em; */
+    line-height: 48px;
   }
 
   blockquote p {
@@ -104,7 +114,7 @@ blockquote p:after {
 }
 
 @media only screen and (min-width: 1600px) {
-  .path-node #block-barbell-content {
+  .page-node-type-tim #block-barbell-content {
     padding: 0 15em;
   }
 

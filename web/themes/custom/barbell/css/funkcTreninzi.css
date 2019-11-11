@@ -1,11 +1,9 @@
 /* INDIVIDUALNI TRENINZI IMG right */
 .field--name-body p .align-right {
   margin-left: 70px;
-  background: lightblue;
 }
 
 /* INDIVIDUALNI TRENINZI IMG left */
 .field--name-body p .align-left {
   margin-right: 18px;
-  background: lightblue;
 }
