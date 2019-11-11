@@ -643,14 +643,20 @@ footer div nav ul.menu a.is-active {
   }
 }
 
-.kontakt-block-content .socials {
-  font-size: 42px;
+.socials {
   padding-bottom: 60px;
 }
 
-.kontakt-block-content .socials span {
-  margin: 0 5px;
+.socials a {
+  font-size: 42px;
+  color: whitesmoke;
+  padding-bottom: 60px;
+  margin: 0 10px;
 }
+
+/* .kontakt-block-content .socials span {
+  margin: 0 5px 60px;
+} */
 
 /* CONTACT - MAP, SOME TITLES */
 @media only screen and (min-width: 768px) and (max-width: 992px) {

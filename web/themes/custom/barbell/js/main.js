@@ -309,13 +309,30 @@ Drupal.behaviors.exampleModule = {
     //FIXED FOOTER ENDS /
 
     fixContactImg = (() => {
-      if(document.querySelector('.path-frontpage')) {
-        const contact = document.querySelector('.front-kontakt-holder')
-        
-        const oldPath = contact.style.backgroundImage.split('"')
-        const newPath = oldPath[0] + '".' + oldPath[1] + '"' + oldPath[2]
-        contact.style.backgroundImage = newPath
+      if (document.querySelector(".path-frontpage")) {
+        const contact = document.querySelector(".front-kontakt-holder");
+
+        const oldPath = contact.style.backgroundImage.split('"');
+        const newPath = oldPath[0] + '".' + oldPath[1] + '"' + oldPath[2];
+        contact.style.backgroundImage = newPath;
       }
     })();
+
+    //KONTAKT SOC IKONE
+    let faLink = document.querySelector(".fm");
+    let vbLink = document.querySelector(".vb");
+    let waLink = document.querySelector(".wa");
+
+    faLink.innerHTML = '<i class="fab fa-facebook-messenger"></i>';
+    vbLink.innerHTML = '<i class="fab fa-viber"></i>';
+    waLink.innerHTML = '<i class="fab fa-whatsapp"></i>';
+
+    let fbLink = document.querySelector(".social-fb");
+    let inLink = document.querySelector(".social-in");
+    let ytLink = document.querySelector(".social-yt");
+
+    fbLink.innerHTML = '<i class="fab fa-facebook-square"></i>';
+    inLink.innerHTML = '<i class="fab fa-instagram"></i>';
+    ytLink.innerHTML = '<i class="fab fa-youtube-square"></i>';
   }
 };
