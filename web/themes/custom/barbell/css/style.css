@@ -74,6 +74,11 @@ body,
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: #e52828;
+}
+
 @font-face {
   font-family: "Brandon Grotesque Medium";
   font-style: normal;
