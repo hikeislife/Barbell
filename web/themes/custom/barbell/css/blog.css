@@ -216,10 +216,6 @@
   }
 }
 
-.article-image {
-  background: dimgray;
-}
-
 .article-image div img {
   width: 100%;
   display: inline-block;

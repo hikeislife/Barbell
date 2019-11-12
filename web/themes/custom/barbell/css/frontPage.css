@@ -103,9 +103,15 @@ h2 span {
 
 .slide .front-slider .slider-image .slider-content .slider-link div {
   background: transparent !important;
-  border: 3px solid var(--yellow);
+  /* border: 3px solid var(--yellow); */
   text-align: center;
   padding: 10px 53px;
+}
+
+.slide .front-slider .slider-image .slider-content .slider-link div a {
+  border: 3px solid var(--yellow);
+  border-radius: 45px;
+  padding: .4em 2em;
 }
 
 @media only screen and (max-width: 768px) {
