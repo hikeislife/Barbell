@@ -8,7 +8,7 @@
 @media only screen and (max-width: 768px) {
   .front-slider,
   .slider-image {
-    height: calc(65vh - 75px);
+    height: calc(80vh - 75px);
   }
 }
 
