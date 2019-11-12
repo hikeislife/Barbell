@@ -342,11 +342,15 @@ header div div .links {
 }
 
 /* MAIN TXT (all, except home page) */
-.field--name-body p {
+.path-frontpage .field--name-body p {
   margin: 0 11%;
+  
+  text-align: justify;
+}
+
+.field--name-body p {
   font-family: "Brandon Grotesque Medium";
   font-size: 29px;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 992px) {
@@ -423,7 +427,7 @@ header div div .links {
   border-radius: 45px;
   margin: 3em auto 5em;
   padding: 1em;
-  /* width: 500px; */
+  max-width: 500px;
   text-align: center;
 }
 

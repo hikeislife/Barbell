@@ -4,6 +4,12 @@
   margin: 1em 0;
 }
 
+@media only screen and (min-width: 1200px) {
+  .page-node-type-article article img {
+    margin: 1em 0 4em;
+  }
+}
+
 .page-node-type-article #block-zakazitetrening {
   padding-top: 5em;
 }
@@ -66,20 +72,32 @@ blockquote p:after {
     font-size: 36px !important;
   }
 }
-.page-node-type-tim #block-barbell-content,
+/* .page-node-type-tim #block-barbell-content,
 .page-node-type-program #block-barbell-content,
 .page-node-type-article #block-barbell-content,
 .page-node-type-tim p {
   padding: 0 1em;
-}
+} */
+
+.page-node-type-article p {
+    margin: 0;
+  }
+
+  .page-node-type-article .node__content .field__item,
+  .page-node-type-tim .field__item,
+  .page-node-type-program .field__item {
+    padding: 0 1em;
+  }
 
 @media only screen and (min-width: 1200px) {
   .page-node-type-tim #block-barbell-content,
   .page-node-type-program #block-barbell-content,
   .page-node-type-article #block-barbell-content,
   .page-node-type-tim p {
-    padding: 0 2.5em;
+    margin: 0;
   } 
+
+  
 
   .align-rigth {
     width: 50%;
@@ -98,10 +116,17 @@ blockquote p:after {
   }
 }
 
+@media only screen and (max-width: 992px) {
 .page-node-type-tim #block-barbell-content p,
 .page-node-type-program #block-barbell-content p,
-.page-node-type-article #block-barbell-content p {
+.page-node-type-article #block-barbell-content div {
   margin: 0;
+  padding: 1em;
+}
+.page-node-type-article #block-barbell-content p {
+  padding: 0;
+  margin: 0;
+}
 }
 
 @media only screen and (min-width: 1200px) {
