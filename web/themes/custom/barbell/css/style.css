@@ -423,7 +423,7 @@ header div div .links {
   border-radius: 45px;
   margin: 3em auto 5em;
   padding: 1em;
-  width: 500px;
+  /* width: 500px; */
   text-align: center;
 }
 
