@@ -117,8 +117,9 @@ blockquote p:after {
     line-height: 48px;
   }
 
-  blockquote p {
+  .page-node-type-tim #block-barbell-content blockquote p {
     font-size: 48px !important;
+    line-height: 70px;
   }
 }
 
@@ -129,13 +130,14 @@ blockquote p:after {
     padding: 0 15em;
   }
 
-  blockquote p {
+  .page-node-type-tim #block-barbell-content blockquote p {
     font-size: 74px !important;
     margin: 80px 0 0 !important;
+    line-height: 70px !important;
   }
 
   .page-node-type-article #block-barbell-content p {
-    width: 1500px;
+    /* width: 1500px; */
     margin: -1em auto 2em;
   }
 }

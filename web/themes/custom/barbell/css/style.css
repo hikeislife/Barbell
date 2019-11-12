@@ -402,7 +402,7 @@ header div div .links {
 }
 
 /* BUTTON (all, except home page)*/
-.node__content,
+/*.node__content,*/
 #block-zakazitetrening div {
   display: grid;
   position: relative;
@@ -410,14 +410,21 @@ header div div .links {
 
 .field--name-field-link-button,
 #block-zakazitetrening div p {
-  background: var(--yellow);
+  /* background: var(--yellow); */
   color: white;
   display: inline-block;
   text-transform: uppercase;
-  padding: 25px 50px;
   font-size: 27px;
-  margin: 90px auto 90px;
+  width: 100%;
+}
+
+.field--name-field-link-button div.field__item {
+  background: var(--yellow);
   border-radius: 45px;
+  margin: 3em auto 5em;
+  padding: 1em;
+  width: 500px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
