@@ -249,7 +249,7 @@ tr > th {
   }
 
   thead > tr > th:nth-child(1n + 2) {
-    min-width: 50px !important;
+    min-width: 30px !important;
   }
 
   td div {
@@ -316,4 +316,10 @@ tr > th {
   /* .raspored-as img {
     width: 19px;
   } */
+}
+
+@media only screen and (max-width: 390px) {
+  .node__content > div:nth-child(1) > table:nth-child(1) {
+    border-spacing: 5px;
+  }
 }

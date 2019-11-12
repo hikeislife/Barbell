@@ -253,6 +253,11 @@
   margin: 35px 0;
 }
 
+.pager__items .pager__item--next,
+.pager__items .pager__item--previous {
+  text-transform: uppercase;
+}
+
 .pager__items .pager__item--previous {
   position: absolute;
   top: -30px;
@@ -267,6 +272,7 @@
 .pager__items .is-active {
   position: absolute;
   left: 50%;
+  font-size: 23px;
 }
 
 .pager__items a {
