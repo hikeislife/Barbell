@@ -344,7 +344,7 @@ header div div .links {
 /* MAIN TXT (all, except home page) */
 .path-frontpage .field--name-body p {
   margin: 0 11%;
-  
+
   text-align: justify;
 }
 
@@ -534,6 +534,7 @@ footer {
   text-align: left;
   padding-left: 0;
   padding-right: 0;
+  margin: 0 11%;
 }
 
 @media only screen and (max-width: 992px) {
