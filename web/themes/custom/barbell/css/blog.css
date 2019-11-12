@@ -37,7 +37,7 @@
 
 .path-blog #block-barbell-content,
 .path-vesti #block-barbell-content {
-  margin: 100px 0;
+  margin: 100px 0 150px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
@@ -63,16 +63,52 @@
   padding-top: 100% !important;
 } */
 
-.path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
-.path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
+.path-blog
+  div
+  .layout-container
+  main
+  .layout-content
+  div
+  #block-barbell-content
+  div
+  div
+  .view-content,
+.path-vesti
+  div
+  .layout-container
+  main
+  .layout-content
+  div
+  #block-barbell-content
+  div
+  div
+  .view-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   justify-content: space-between;
 }
 @media only screen and (max-width: 1100px) {
-  .path-blog div .layout-container main .layout-content div #block-barbell-content div div .view-content,
-  .path-vesti div .layout-container main .layout-content div #block-barbell-content div div .view-content {
+  .path-blog
+    div
+    .layout-container
+    main
+    .layout-content
+    div
+    #block-barbell-content
+    div
+    div
+    .view-content,
+  .path-vesti
+    div
+    .layout-container
+    main
+    .layout-content
+    div
+    #block-barbell-content
+    div
+    div
+    .view-content {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 2vw 7em;
   }
@@ -213,4 +249,43 @@
   .article-info-wrapper .article-date div time {
     font-size: 21px;
   }
+}
+
+.pager__items {
+  padding-left: 0;
+  position: relative;
+  margin: 35px 0;
+}
+
+.pager__items .pager__item--previous {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.pager__items .pager__item--next {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+.pager__items .is-active {
+  position: absolute;
+  left: 50%;
+}
+
+.pager__items a {
+  text-decoration: none;
+  color: black;
+}
+
+.next_arrow,
+.previous_arrow {
+  font-size: 50px;
+  position: relative;
+  top: 5px;
+}
+
+.next_txt,
+.previous_txt {
+  font-size: 25px;
 }

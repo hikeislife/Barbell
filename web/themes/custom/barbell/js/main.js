@@ -319,7 +319,6 @@ Drupal.behaviors.exampleModule = {
     // })();
 
     //KONTAKT SOC IKONE
-
     let fbLink = document.querySelector(".social-fb");
     let inLink = document.querySelector(".social-in");
     let ytLink = document.querySelector(".social-yt");
@@ -329,14 +328,30 @@ Drupal.behaviors.exampleModule = {
     ytLink.innerHTML = '<i class="fab fa-youtube-square"></i>';
 
     if (document.querySelector(".fm")) {
-    let faLink = document.querySelector(".fm");
-    let vbLink = document.querySelector(".vb");
-    let waLink = document.querySelector(".wa");
+      let faLink = document.querySelector(".fm");
+      let vbLink = document.querySelector(".vb");
+      let waLink = document.querySelector(".wa");
 
-    faLink.innerHTML = '<i class="fab fa-facebook-messenger"></i>';
-    vbLink.innerHTML = '<i class="fab fa-viber"></i>';
-    waLink.innerHTML = '<i class="fab fa-whatsapp"></i>';
+      faLink.innerHTML = '<i class="fab fa-facebook-messenger"></i>';
+      vbLink.innerHTML = '<i class="fab fa-viber"></i>';
+      waLink.innerHTML = '<i class="fab fa-whatsapp"></i>';
     }
-    
+    //KONTAKT SOC IKONE ENDS
+
+    if (document.querySelector(".pager__item--next a span:nth-child(2)")) {
+      const next = document.querySelector(
+        ".pager__item--next a span:nth-child(2)"
+      );
+      next.innerHTML =
+        '<span class="next_txt">sledeća stranica</span><span class="next_arrow"> &rarr;</span>';
+    }
+    if (document.querySelector(".pager__item--previous a span:nth-child(2)")) {
+      const previous = document.querySelector(
+        ".pager__item--previous a span:nth-child(2)"
+      );
+      console.log(previous);
+      previous.innerHTML =
+        '<span class="previous_arrow">&larr; </span><span class="previous_txt">prethodna stranica</span>';
+    }
   }
 };
