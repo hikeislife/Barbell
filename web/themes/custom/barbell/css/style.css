@@ -344,8 +344,11 @@ header div div .links {
 /* MAIN TXT (all, except home page) */
 .path-frontpage .field--name-body p {
   margin: 0 11%;
-
   text-align: justify;
+}
+
+.path-frontpage .slider-content p {
+  margin: 0 auto;
 }
 
 .field--name-body p {
