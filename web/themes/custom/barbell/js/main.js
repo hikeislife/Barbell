@@ -338,6 +338,7 @@ Drupal.behaviors.exampleModule = {
     }
     //KONTAKT SOC IKONE ENDS
 
+    //SLEDECA I PRETHODNA STRANA LINKOVI BLOG (VEROVATNO I VESTI)
     if (document.querySelector(".pager__item--next a span:nth-child(2)")) {
       const next = document.querySelector(
         ".pager__item--next a span:nth-child(2)"
@@ -349,9 +350,9 @@ Drupal.behaviors.exampleModule = {
       const previous = document.querySelector(
         ".pager__item--previous a span:nth-child(2)"
       );
-      console.log(previous);
       previous.innerHTML =
         '<span class="previous_arrow">&larr; </span><span class="previous_txt">prethodna stranica</span>';
     }
+    //SLEDECA I PRETHODNA STRANA LINKOVI BLOG (VEROVATNO I VESTI) ENDS
   }
 };
