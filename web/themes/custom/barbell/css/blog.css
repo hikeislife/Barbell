@@ -266,12 +266,13 @@
 
 .pager__items .pager__item--next {
   position: absolute;
-  top: -30px;
+  top: -23px;
   right: 0;
 }
 .pager__items .is-active {
   position: absolute;
   left: 50%;
+  transform: translate(-50%);
   font-size: 23px;
 }
 
@@ -289,5 +290,18 @@
 
 .next_txt,
 .previous_txt {
-  font-size: 25px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .next_txt,
+  .previous_txt {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1100px) {
+  .pager__items {
+    top: -80px;
+  }
 }
