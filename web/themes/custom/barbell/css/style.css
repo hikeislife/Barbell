@@ -273,9 +273,9 @@ header div div .links {
   text-align: center;
   text-transform: uppercase;
   margin: 145px auto;
-  font-size: 64px;
+  font-size: 60px;
   font-family: "Henry", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -296,22 +296,22 @@ header div div .links {
 .page-title .field--name-title:before,
 .kontakt-block-content h3:before,
 #after_content div div h2:before {
-  content: url("../img/yellow-stripes-78.png");
+  content: url(../img/page-title-bcg-big.png);
   position: absolute;
   z-index: -1;
 }
 
 .page-title .field--name-title:before {
-  left: -32px;
-  top: 4px;
+  left: -37px;
+  top: 1px;
 }
 
 @media only screen and (max-width: 992px) {
   .page-title .field--name-title:before,
   .kontakt-block-content h3:before,
   #after_content div div h2:before {
-    content: url("../img/page-title-bcg.png");
-    top: 4px;
+    content: url("../img/page-title-bcg-med.png");
+    top: 1px;
     left: -25px;
   }
 }
@@ -329,15 +329,32 @@ header div div .links {
 }
 
 .kontakt-block-content h3:before {
-  left: -39px;
-  bottom: -17px;
+  left: -25px;
+  bottom: -24px;
 }
 
 @media only screen and (max-width: 768px) {
   .page-title .field--name-title:before,
   .kontakt-block-content h3:before {
-    left: -25px;
-    top: -4px;
+    left: -11px;
+    top: -2px;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .page-title,
+  .kontakt-block-content h3,
+  #after_content div div h2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 26px;
+    letter-spacing: 0;
+  }
+
+  .page-title .field--name-title:before,
+  .kontakt-block-content h3:before,
+  #after_content div div h2:before {
+    content: url("../img/page-title-bcg-sm.png");
   }
 }
 
@@ -684,7 +701,7 @@ footer div nav ul.menu a.is-active {
   .kontakt-block-content h3,
   #after_content div div h2 {
     /* margin: 0; */
-    font-size: 53px;
+    font-size: 49px;
   }
 
   .kontakt-block-content .tel a {
@@ -730,18 +747,31 @@ footer div nav ul.menu a.is-active {
     left: -26px !important;
   }
 
-  /* blog naslov */
-  .path-blog .page-title:before,
+  /* programi naslov */
   .path-programi .page-title:before {
-    content: url(../img/page-title-bcg.png) !important;
-    top: -3px !important;
-    left: -22px !important;
+    content: url(../img/page-title-bcg-sm.png) !important;
+    top: -1px !important;
+    left: -18px !important;
   }
 
   /* tim naslov */
   .path-tim .page-title:before {
-    content: url(../img/page-title-bcg.png) !important;
+    content: url(../img/page-title-bcg-sm.png) !important;
     bottom: -14px !important;
     left: -28px !important;
   }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  /* programi naslov */
+  .path-programi .page-title:before {
+    content: url(../img/page-title-bcg.png) !important;
+    top: -1px !important;
+    left: -18px !important;
+  }
+}
+
+.page-title {
+  margin-left: 15px;
+  margin-right: 15px;
 }

@@ -111,7 +111,7 @@ h2 span {
 .slide .front-slider .slider-image .slider-content .slider-link div a {
   border: 3px solid var(--yellow);
   border-radius: 45px;
-  padding: .4em 2em;
+  padding: 0.4em 2em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -154,14 +154,31 @@ h2 span {
 }
 
 #after_content div div h2:before {
-  top: 3px;
-  left: -22px;
+  top: 4px;
+  left: -25px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 551px) and (max-width: 768px) {
   .path-frontpage #after_content div div h2 {
     /* margin: 0; */
-    font-size: 45px;
+    font-size: 35px;
+  }
+
+  #after_content div div h2:before {
+    top: -1px;
+    left: 1px;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .path-frontpage #after_content div div h2 {
+    /* margin: 0; */
+    font-size: 32px;
+  }
+
+  #after_content div div h2:before {
+    top: 3px;
+    left: 24px;
   }
 }
 
