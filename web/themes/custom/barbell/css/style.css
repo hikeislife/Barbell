@@ -593,6 +593,10 @@ footer div nav ul.menu a.is-active {
   align-items: center;
 }
 
+#block-sociallinks a {
+  margin: 0 12px;
+}
+
 /* +++++++++++ KONTAKT +++++++++++ */
 
 #pre_footer {
